@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nina umbrella project</title>
   <link rel="stylesheet" href="stylesheets/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -15,13 +16,12 @@
       </div>
       <div class="container gnav__container">
         <ul class="gnav">
-          <li class="gnav__item">About nina</li>
-          <li class="gnav__item">About sle/lupus</li>
-          <li class="gnav__item">Workshop</li>
-          <li class="gnav__item">New items</li>
-          <li class="gnav__item">Gallery</li>
-          <li class="gnav__item">Buy items</li>
-          <li class="gnav__item">Links</li>
+          <li class="gnav__item"><a href="#about-nina">About nina</a></li>
+          <li class="gnav__item"><a href="#about-sle">About sle/lupus</a></li>
+          <li class="gnav__item"><a href="#workshop">Workshop</a></li>
+          <li class="gnav__item"><a href="#new-items">New items</a></li>
+          <li class="gnav__item"><a href="#items">Items</a></li>
+          <li class="gnav__item"><a href="#links">Links</a></li>
         </ul>
       </div>
     </header>
@@ -47,8 +47,8 @@
         </ul>
       </div>
 
-      <section class="main__about">
-        <h2 class="sub__title">About</h2>
+      <section id="about-nina" class="main__about">
+        <h2 class="sub__title">About nina</h2>
         <div class="container about-nina__details">
           <picture class="about-nina__img">
 
@@ -77,7 +77,7 @@ nina のアクセサリーを手に取って頂いた事をキッカケに、SLE
         </div>
       </section>
 
-      <section class="main__about">
+      <section id="about-sle" class="main__about">
         <h2 class="sub__title">About sle/lupus</h2>
         <div class="container about-sle__details">
           <picture class="about-sle__img">
@@ -87,13 +87,13 @@ nina のアクセサリーを手に取って頂いた事をキッカケに、SLE
             膠原病のひとつとして知られている、国の指定難病、全身性エリテマトーデス(英名の頭文字を取って　SLE/英語で通称Lupus)の症状はきわめて多彩で、“全身性”という病名のとおり、全身の様々な臓器に障害を起こしやすいという特徴があります。<br>
             ただし、現れる症状やその組み合わせ、重症度などは個々の患者さんによって異なります。<br>
             病気の悪化、または再熱の原因として、紫外線暴露、ストレス、睡眠不足、疲れ、等が挙げられ、患者は日頃から日中の外出を控えたり、最善の紫外線対策をしての外出を求められます。<br>
-            <a href="https://www.sanofi-sle.jp/">下記サイトでは、全身性エリテマトーデス(SLE/Lupus)について説明しています。</a>
-            <a href="https://www.sanofi-sle.jp/cope/case_03">下記サイトでは、ninaのアクセサリーデザインを手掛けるプロゴルファー岡村咲のエピソードが公開されています。</a>
+            <a href="https://www.sanofi-sle.jp/" target="_blank" rel="noopener">下記サイトでは、全身性エリテマトーデス(SLE/Lupus)について説明しています。</a>
+            <a href="https://www.sanofi-sle.jp/cope/case_03" target="_blank" rel="noopener">下記サイトでは、ninaのアクセサリーデザインを手掛けるプロゴルファー岡村咲のエピソードが公開されています。</a>
           </p>
         </div>
       </section>
 
-      <section class="main__workshop">
+      <section id="workshop" class="main__workshop">
         <h2 class="sub__title">Workshop</h2>
         <div class="container workshop__details">
           <picture class="workshop__img">
@@ -157,7 +157,7 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         </div>
       </section>
 
-      <section class="main__new-items">
+      <section id="new-items" class="main__new-items">
         <h2 class="sub__title">New items</h2>
         <div class="container new-items__details">
           <picture class="new-items__img">
@@ -169,8 +169,8 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         </div>
       </section>
 
-      <section class="main__gallery">
-        <h2 class="sub__title">Gallery</h2>
+      <section id="items" class="main__items">
+        <h2 class="sub__title">Items</h2>
         <div class="gallery__slide-show">
           <picture class="gallery__img">
 
@@ -184,17 +184,11 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         </div>
       </section>
 
-      <section class="main__buy-items">
-        <h2 class="sub__title">Buy items</h2>
-        <div class="buy-items__link-design">
-          <p class="jump__base-site">
-            <a href=""></a>
-          </p>
-        </div>
-      </section>
-
-      <section class="main__links">
+      <section id="links" class="main__links">
         <h2 class="sub__title">Links</h2>
+        <div class="links__buy-links">
+          <p class="links__base-link">商品のご購入は<a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener">こちら</a>からも可能です。※BASE管理画面へ移動します。</p>
+        </div>
         <div class="links__sns-design">
           <div class="links__instagram-api"></div>
           <div class="links__facebook-api"></div>
