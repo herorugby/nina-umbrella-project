@@ -6,44 +6,62 @@
   <title>nina umbrella project</title>
   <link rel="stylesheet" href="stylesheets/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrap">
 
-    <header id="header">
-      <div class="container logo__container">
-        <h1 class="logo"></h1>
-      </div>
-      <div class="container gnav__container">
-        <ul class="gnav">
-          <li class="gnav__item"><a href="#about-nina">About nina</a></li>
-          <li class="gnav__item"><a href="#about-sle">About sle/lupus</a></li>
-          <li class="gnav__item"><a href="#workshop">Workshop</a></li>
-          <li class="gnav__item"><a href="#new-items">New items</a></li>
-          <li class="gnav__item"><a href="#items">Items</a></li>
-          <li class="gnav__item"><a href="#links">Links</a></li>
-        </ul>
+    <header id="header top">
+      <div class="container header__container">
+        <h1 class="head__logo">
+          <a href="#top">
+            <picture>
+              <source class="large-device-logo" media="(min-width: 560px)" srcset="images/large-device-logo.png">
+              <img class="smart-device-logo" src="images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
+            </picture>
+          </a>
+        </h1>
+        <div class="hamburger-icon">
+          <i id="modal-openBtn" class="fas fa-list-ul"></i>
+          <i id="modal-closeBtn" class="fas fa-times"></i>
+        </div>
+        <div id="cover"></div>
+        <nav id="gnav" class="container gnav__container">
+          <ul class="gnav__list">
+            <li class="gnav__list__item"><a href="#about-nina">About nina</a></li>
+            <li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li>
+            <li class="gnav__list__item"><a href="#workshop">Workshop</a></li>
+            <li class="gnav__list__item"><a href="#new-items">New items</a></li>
+            <li class="gnav__list__item"><a href="#items">Items</a></li>
+            <li class="gnav__list__item"><a href="#links">Links</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-
 
     <main id="main">
       <div class="main__img-slide-show">
         <picture class="top__img">
-
+          <source media="(min-width: 960px)" srcset="images/test1.jpg">
+          <source media="(min-width: 560px)" srcset="images/test1.jpg">
+          <img src="images/test1.jpg" alt="test写真1">
         </picture>
         <picture class="top__img">
-
+          <source media="(min-width: 960px)" srcset="images/test2.jpg">
+          <source media="(min-width: 560px)" srcset="images/test2.jpg">
+          <img src="images/test2.jpg" alt="test写真2">
         </picture>
         <picture class="top__img">
-
+          <source media="(min-width: 960px)" srcset="images/test3.jpg">
+          <source media="(min-width: 560px)" srcset="images/test3.jpg">
+          <img src="images/test3.jpg" alt="test写真3">
         </picture>
       </div>
 
       <div class="main__new-info">
         <ul class="new-info__list">
-          <li class="new-info__list__items"></li>
-          <li class="new-info__list__items"></li>
+          <li class="new-info__list__items">ここにnewitems</li>
+          <li class="new-info__list__items">ここにnewitems</li>
         </ul>
       </div>
 
@@ -51,7 +69,9 @@
         <h2 class="sub__title">About nina</h2>
         <div class="container about-nina__details">
           <picture class="about-nina__img">
-
+            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+            <img src="images/test1.jpg" alt="test写真1">
           </picture>
           <p class="about-nina__description">
             ニナ　アンブレラ　プロジェクト
@@ -81,7 +101,9 @@ nina のアクセサリーを手に取って頂いた事をキッカケに、SLE
         <h2 class="sub__title">About sle/lupus</h2>
         <div class="container about-sle__details">
           <picture class="about-sle__img">
-
+            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+            <img src="images/test1.jpg" alt="test写真1">
           </picture>
           <p class="about-sle__description">
             膠原病のひとつとして知られている、国の指定難病、全身性エリテマトーデス(英名の頭文字を取って　SLE/英語で通称Lupus)の症状はきわめて多彩で、“全身性”という病名のとおり、全身の様々な臓器に障害を起こしやすいという特徴があります。<br>
@@ -97,7 +119,9 @@ nina のアクセサリーを手に取って頂いた事をキッカケに、SLE
         <h2 class="sub__title">Workshop</h2>
         <div class="container workshop__details">
           <picture class="workshop__img">
-
+            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+            <img src="images/test1.jpg" alt="test写真1">
           </picture>
           <p class="workshop__description">
             nina で制作するアクセサリーの素材について
@@ -120,7 +144,9 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         </div>
         <div class="container workshop__details">
           <picture class="workshop__img">
-
+            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+            <img src="images/test1.jpg" alt="test写真1">
           </picture>
           <p class="workshop__description">
             nina で制作するアクセサリーの素材について
@@ -148,7 +174,9 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         </div>
         <div class="container workshop__details">
           <picture class="workshop__img">
-
+            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+            <img src="images/test1.jpg" alt="test写真1">
           </picture>
           <p class="workshop__description">
             お取り扱いの注意点
@@ -206,7 +234,9 @@ nina で制作するアクセサリーに使用する素材は以下の通りで
         <p class="policy__trade"></p>
         <p class="policy__privacy"></p>
       </div>
-      <div class="footer__copyright"><small></small></div>
+      <div class="footer__contents__copy-right">
+        <p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>
+      </div>
     </footer>
 
   </div>

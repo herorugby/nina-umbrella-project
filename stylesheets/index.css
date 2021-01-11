@@ -1,1 +1,168 @@
 @charset "UTF-8";
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+}
+
+/* font size auto control off */
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.wrap {
+  width: 95%;
+  height: auto;
+  margin: 2% 2.5%;
+}
+
+/* Header */
+/* css less than 559px ~mobile.ver~ */
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.head__logo {
+  position: fixed;
+  top: 1%;
+  left: 2.5%;
+  width: 45%;
+  border-radius: 3%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.smart-device-logo {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.hamburger-icon {
+  position: fixed;
+  top: 2%;
+  right: 2.5%;
+  width: 20%;
+  line-height: 10vh;
+  text-align: center;
+  z-index: 1;
+}
+
+#modal-openBtn,
+#modal-closeBtn {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* #cover {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+#gnav {
+  display: none;
+  position: fixed;
+  top: 15%;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  background: rgba(130, 130, 130, 0.9);
+  font-size: 1rem;
+  font-family: "Lora", serif;
+}
+
+.gnav__list {
+  display: block;
+}
+
+.gnav__list__item {
+  width: 100%;
+  line-height: 10vh;
+  text-align: center;
+  border: 1px solid #fffafa;
+}
+
+.gnav__list__item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* css 561px or more ~tablet.ver~ */
+/* Header */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Header */
+@media screen and (min-width: 960px) {
+}
+
+/* Main */
+/* css less than 559px ~mobile.ver~ */
+.main__img-slide-show {
+  width: 100%;
+  position: relative;
+  padding-top: 1%;
+}
+
+.main__img-slide-show picture img {
+  width: 100%;
+  position: absolute;
+}
+
+.main__new-info {
+  padding-top: 60%;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Main */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Main */
+@media screen and (min-width: 960px) {
+}
+
+/* Footer */
+/* css less than 559px ~mobile.ver~ */
+
+/* css 561px or more ~tablet.ver~ */
+/* Footer */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Footer */
+@media screen and (min-width: 960px) {
+}
+
+/* css less than 930px ~landscape.ver~ */
+/* Header */
+/* Main */
+/* Footer */
