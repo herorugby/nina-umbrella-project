@@ -187,6 +187,11 @@ p {
   color: #666;
 }
 
+
+.sub-items-slide .slick-current{
+  opacity: 0.3;
+ }
+
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
