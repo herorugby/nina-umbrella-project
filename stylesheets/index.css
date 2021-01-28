@@ -44,6 +44,9 @@ body {
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
+.header__container{
+  position: relative;
+}
 
 .head__logo {
   float: left;
@@ -189,7 +192,7 @@ p {
 }
 
 .main__img-slide-show picture img {
-  height: 100vh;
+  height: 85vh;
 }
 
 .contents__wrap,
