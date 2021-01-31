@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html,
 body,
 h1,
@@ -6,26 +7,9 @@ h2,
 h3,
 h4,
 h5,
-p,
-dl,
-dt,
-dd {
+p {
   margin: 0;
   padding: 0;
-  line-height: 1;
-}
-
-ol,
-ul,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-
-img {
-  width: 100%;
 }
 
 /* font size auto control off */
@@ -36,42 +20,90 @@ body {
   text-size-adjust: 100%;
 }
 
-/* .wrap {
-  width: 95%;
-  height: auto;
-  margin: 2% 2.5%;
-} */
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
-.header__container {
-  /* position: relative; */
+h1 {
+  font-size: 1.625rem;
 }
 
-#head__logo {
-  float: left;
+/* #head__logo {
+  display: block;
   position: fixed;
   top: 1%;
   left: 2.5%;
-  width: 45%;
+  width: 50%;
   height: auto;
   border-radius: 3%;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
+} */
+
+/* #head__logo a {
+  display: block;
+  padding: 2%;
+  margin: auto;
+} */
+
+/* .smart-device-logo {
+  width: 100%;
+  padding: auto 2%;
+  margin: 0 5%;
+} */
+
+.top__link {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
+  color: #fff;
+  opacity: 0.8;
 }
 
-.smart-device-logo {
-  width: 90%;
-  margin: 0 5%;
+.top__link:visited {
+  /* color: rgba(255, 255, 255, 0.5); */
+  /* color: #fff; */
+  /* opacity: 0.3; */
+}
+
+.top__logo {
+  width: 50%;
+  height: auto;
+  border-radius: 3%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.top__title {
+  /* display: inline-block; */
+  /* line-height: 100px; */
 }
 
 .hamburger-icon {
-  float: right;
   position: fixed;
   top: 2%;
-  right: 2.5%;
-  width: 20%;
-  line-height: 10vh;
+  right: 3%;
+  width: 10%;
+  /* line-height: 10vh; */
   text-align: center;
   z-index: 1;
 }
@@ -84,8 +116,8 @@ body {
 #gnav {
   display: none;
 }
-
-/* #cover {
+/*
+ #cover {
   display: none;
   position: fixed;
   min-width: 100%;
@@ -93,6 +125,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
   z-index: 10;
 }
+
 
 #gnav {
   display: none;
@@ -126,11 +159,17 @@ body {
 /* css 561px or more ~tablet.ver~ */
 /* Header */
 @media screen and (min-width: 560px) {
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
+  h1 {
+    font-size: 1.875rem;
+  }
 }
 
 /* Main */
@@ -152,21 +191,28 @@ h5 {
   font-size: 1.0625rem;
 }
 
-section {
-  margin: 5% auto;
-}
-
 p {
   line-height: 1.5;
   font-size: 1rem;
 }
 
-.main__img-slide-show picture img {
-  height: 80vh;
+section {
+  margin: 5% auto;
 }
 
-.contents__wrap,
-.main__new-info {
+/* main__img-slide */
+.main__img-slide-show {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__img-slide-show picture img {
+  height: 80vh;
+  width: 100%;
+}
+
+/* contents common setting */
+.contents__wrap {
   width: 95%;
   height: auto;
   margin: 2% 2.5%;
@@ -215,6 +261,7 @@ p {
 .card-design__img {
   width: 100%;
   height: 200px;
+  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
@@ -231,8 +278,62 @@ p {
   color: #666;
 }
 
+/* about-nina */
+
+/* about-sle */
+
+/* workshop */
+
+/* new-items */
+.new-items__details {
+  position: relative;
+}
+
+.new-items__details:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 35px solid #f00;
+  border-right: 35px solid transparent;
+}
+
+.new-items__details:after {
+  content: "NEW!!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: xx-small;
+  color: #fff;
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+/* items */
 .sub-items-slide .slick-current {
   opacity: 0.3;
+}
+
+/* jump-and-buy */
+.links__buy-links {
+  width: 100%;
+}
+
+.links__btn {
+  width: 100%;
+  margin-top: 5%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+}
+
+.links__btn a {
+  display: block;
+}
+
+.links__base-icon {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* css 561px or more ~tablet.ver~ */
