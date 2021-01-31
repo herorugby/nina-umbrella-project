@@ -388,6 +388,56 @@ section {
 
 /* Footer */
 /* css less than 559px ~mobile.ver~ */
+.footer-wrap {
+  width: 94%;
+  height: auto;
+  padding: 2% 3%;
+  text-align: center;
+  background-color: aqua;
+}
+
+.official-sns {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.official-sns:before,
+.official-sns:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #666;
+}
+
+.official-sns:before {
+  left: 0;
+}
+
+.official-sns:after {
+  right: 0;
+}
+
+.footer__sns-icon {
+  display: flex;
+}
+
+.sns-icon__instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.sns-icon__facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+  font-weight: 900;
+  font-size: 20px;
+}
 
 /* css 561px or more ~tablet.ver~ */
 /* Footer */
