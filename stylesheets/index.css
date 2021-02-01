@@ -425,19 +425,19 @@ section {
   display: flex;
 }
 
-.sns-icon__instagram::before {
+/* .sns-icon__instagram::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f16d";
   font-weight: 900;
   font-size: 20px;
-}
+} */
 
-.sns-icon__facebook::before {
+/* .sns-icon__facebook::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f09a";
   font-weight: 900;
   font-size: 20px;
-}
+} */
 
 /* css 561px or more ~tablet.ver~ */
 /* Footer */
