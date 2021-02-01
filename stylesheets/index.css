@@ -113,9 +113,14 @@ h1 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#gnav {
+/* #gnav {
+  display: none;
+} */
+
+#modal {
   display: none;
 }
+
 /*
  #cover {
   display: none;

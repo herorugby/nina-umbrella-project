@@ -1,5 +1,7 @@
 // modal menu
-
+$(".modal").modaal({
+    fullscreen: true,
+});
 
 // slide show with slick
 $(function() {
