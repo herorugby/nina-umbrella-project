@@ -279,9 +279,25 @@ section {
 }
 
 /* about-nina */
+.new-info__list__items a {
+  display: block;
+  text-decoration: none;
+  color: #4169e1;
+  font-weight: 600;
+}
 
 /* about-sle */
+.about-sle__description a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #4169e1;
+  font-weight: 600;
+}
 
+.about-sle__description__last-child a {
+  padding: 3% 0;
+}
 /* workshop */
 
 /* new-items */
@@ -311,6 +327,26 @@ section {
 }
 
 /* items */
+.jump-item-list {
+  display: flex;
+  justify-content: center;
+}
+
+.jump-item-list_goods {
+  margin: 0 5% 5% 5%;
+  padding: 1.5% 3%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.jump-item-list_goods a {
+  display: block;
+  text-decoration: none;
+  color: #4169e1;
+  font-weight: 600;
+}
+
 .sub-items-slide .slick-current {
   opacity: 0.3;
 }
@@ -323,7 +359,7 @@ section {
 .links__btn {
   width: 100%;
   margin-top: 5%;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .links__btn a {
