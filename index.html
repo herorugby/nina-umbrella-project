@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 
 	<!-- read css of modaal -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css"> -->
 
 	<!-- cdn of jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +20,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 	<!-- cdn of modal -->
-	<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script> -->
 
 	<!-- read fontsawesome -->
 	<script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
@@ -40,13 +40,8 @@
 			<h1 class="top__title">nina</h1>
 			<p>Be with you</p>
 		</a>
-		<!-- <div class="hamburger-icon">
-			<i id="modal-openBtn" class="fas fa-list-ul"></i>
-			<i id="modal-closeBtn" class="fas fa-times"></i>
-		</div> -->
-		<!-- <div id="cover"></div> -->
-		<a href="#modal" class="modal"><i id="modal-openBtn" class="fas fa-list-ul"></i></a>
-		<!-- <nav id="gnav" class="container gnav__container">
+
+		<nav id="gnav" class="container gnav__container">
 			<ul class="gnav__list">
 				<li class="gnav__list__item"><a href="#top">Top</a></li>
 				<li class="gnav__list__item"><a href="#about-nina">About nina</a></li>
@@ -55,19 +50,12 @@
 				<li class="gnav__list__item"><a href="#new-items">New items</a></li>
 				<li class="gnav__list__item"><a href="#items">Items</a></li>
 				<li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li>
-			</ul>
-		</nav> -->
-		<nav id="modal" class="container gnav__container">
-			<ul class="gnav__list">
-				<li class="gnav__list__item"><a href="#top">Top</a></li>
-				<li class="gnav__list__item"><a href="#about-nina">About nina</a></li>
-				<li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li>
-				<li class="gnav__list__item"><a href="#workshop">Workshop</a></li>
-				<li class="gnav__list__item"><a href="#new-items">New items</a></li>
-				<li class="gnav__list__item"><a href="#items">Items</a></li>
-				<li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li>
+				<li class="gnav__list__item"><a href="#">Contact</a></li>
 			</ul>
 		</nav>
+		<div class="hamburger-icon">
+			<i id="hamburger-btn" class="fas fa-list-ul"></i>
+		</div>
 	</header>
 
 	<main id="main">
@@ -366,12 +354,20 @@
 		<div class="footer-wrap">
 			<p class="official-sns">公式SNS</p>
 			<ul class="container footer__sns-icon">
-				<li class="sns-icon__instagram"><a href="https://www.instagram.com/nina_bysakiokamura/?igshid=ir99440gxhwq" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
-				<li class="sns-icon__facebook"><a href="https://www.facebook.com/nina.umbrella.project/" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a></li>
+				<li class="sns-icon__instagram">
+					<a href="https://www.instagram.com/nina_bysakiokamura/?igshid=ir99440gxhwq" target="_blank" rel="noopener">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="sns-icon__facebook">
+					<a href="https://www.facebook.com/nina.umbrella.project/" target="_blank" rel="noopener">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
 			</ul>
 			<div class="container footer__policy">
-				<p class="policy__trade"></p>
-				<p class="policy__privacy"></p>
+				<p class="policy__trade"><a href="#">特定商取引法に基づく表記</a></p>
+				<p class="policy__privacy"><a href="#">プライバシーポリシー</a></p>
 			</div>
 			<div class="footer__contents__copy-right">
 				<p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>

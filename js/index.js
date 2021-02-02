@@ -1,7 +1,43 @@
-// modal menu
-$(".modal").modaal({
-    fullscreen: true,
+// hamburger menu
+
+// when to come hamburger icon
+// $(function () {
+//     $(window).on('load resize', function () {
+//         infoBox = $('.main__new-info').offset().top();
+//         winH = $(window).height();
+//     });
+//     $(function () {
+//         var hamburgerIcon = $('.hamburger-icon');
+//         hamburgerIcon.hide();
+//         $(window).scroll(function () {
+//             if ($(this).scrollTop() > infoBox - winH) {
+//                 hamburgerIcon.fadeIN();
+//             } else {
+//                 hamburgerIcon.fadeOut();
+//             }
+//         });
+//     });
+// });
+
+// how to display hamburger icon
+$(function () {
+    // ハンバーガーアイコンをクリックでgnavがスライドイン、アウト
+    $(".hamburger-icon").on("click", function () {
+        $("#gnav").toggleClass("is-active");
+        $(this).next().slideToggle();
+        $("i").toggleClass("fa-list-ul");
+        $("i").toggleClass("fa-times");
+    });
+
+    // gnavアイテムをクリックでgnavがスライドアウト
+    $(".gnav__list__item").on("click", function () {
+        $("#gnav").toggleClass("is-active");
+        $(".hamburger-icon").next().slideToggle();
+        $("i").toggleClass("fa-list-ul");
+        $("i").toggleClass("fa-times");
+    });
 });
+
 
 // slide show with slick
 $(function() {
