@@ -112,6 +112,7 @@ h1 {
 .gnav__list__item a {
   font-size: 1rem;
   text-decoration: none;
+  color: #4169e1;
 }
 
 .gnav__list__item a:visited {
@@ -300,6 +301,7 @@ section {
 }
 /* workshop */
 
+/* items */
 /* new-items */
 .new-items__details {
   position: relative;
@@ -326,14 +328,18 @@ section {
   transform: rotate(-45deg) translate(-5px, 5px);
 }
 
-/* items */
-.jump-item-list {
-  display: flex;
-  justify-content: center;
+.sub-items-slide .slick-current {
+  opacity: 0.3;
 }
 
+/* .jump-item-list {
+  display: flex;
+  justify-content: center;
+} */
+
 .jump-item-list_goods {
-  margin: 0 5% 5% 5%;
+  width: 50%;
+  margin: 3% auto 7.5%;
   padding: 1.5% 3%;
   text-align: center;
   border-radius: 5px;
@@ -345,31 +351,6 @@ section {
   text-decoration: none;
   color: #4169e1;
   font-weight: 600;
-}
-
-.sub-items-slide .slick-current {
-  opacity: 0.3;
-}
-
-/* jump-and-buy */
-.links__buy-links {
-  width: 100%;
-}
-
-.links__btn {
-  width: 100%;
-  margin-top: 5%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.links__btn a {
-  display: block;
-}
-
-.links__base-icon {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
 }
 
 /* css 561px or more ~tablet.ver~ */
@@ -432,6 +413,26 @@ section {
   background-color: #f0f8ff;
 }
 
+.footer__base-link {
+  color: #666;
+}
+
+.links__btn {
+  width: 80%;
+  margin: 1.5% auto 3.5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.links__btn a {
+  display: block;
+}
+
+.links__base-icon {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
 .official-sns {
   position: relative;
   display: inline-block;
@@ -465,7 +466,7 @@ section {
 .sns-icon__instagram,
 .sns-icon__facebook {
   font-size: 1.375rem;
-  margin: 3% 5%;
+  margin: 3%;
 }
 
 .fa-instagram {

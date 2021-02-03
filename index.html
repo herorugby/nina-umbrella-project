@@ -12,7 +12,7 @@
 
 	<!-- read css of modaal
 	 -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
 
 	<!-- cdn of jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 	<!-- cdn of modal -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
 
 	<!-- read fontsawesome -->
 	<script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
@@ -48,10 +48,10 @@
 				<li class="gnav__list__item"><a href="#about-nina">About nina</a></li>
 				<li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li>
 				<li class="gnav__list__item"><a href="#workshop">Workshop</a></li>
-				<li class="gnav__list__item"><a href="#new-items">New items</a></li>
+				<!-- <li class="gnav__list__item"><a href="#new-items">New items</a></li> -->
 				<li class="gnav__list__item"><a href="#items">Items</a></li>
-				<li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li>
-				<li class="gnav__list__item"><a href="#">Contact</a></li>
+				<!-- <li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li> -->
+				<!-- <li class="gnav__list__item"><a href="#">Contact</a></li> -->
 			</ul>
 		</nav>
 		<div class="hamburger-icon">
@@ -67,8 +67,8 @@
 				<img src="images/test-main-img1.jpeg" alt="test写真1">
 			</picture>
 			<picture class="top__img">
-				<source media="(min-width: 960px)" srcset="images/test-main-img2.jpeg">
-				<source media="(min-width: 560px)" srcset="images/test-main-img2.jpeg">
+				<source media="(min-width: 960px)" srcset="images/test-main-img2.jpg">
+				<source media="(min-width: 560px)" srcset="images/test-main-img2.jpg">
 				<img src="images/test-main-img2.jpg" alt="test写真2">
 			</picture>
 			<picture class="top__img">
@@ -77,8 +77,8 @@
 				<img src="images/test-main-img3.jpeg" alt="test写真3">
 			</picture>
 			<picture class="top__img">
-				<source media="(min-width: 960px)" srcset="images/test-main-img2.jpeg">
-				<source media="(min-width: 560px)" srcset="images/test-main-img2.jpeg">
+				<source media="(min-width: 960px)" srcset="images/test-main-img2.jpg">
+				<source media="(min-width: 560px)" srcset="images/test-main-img2.jpg">
 				<img src="images/test-main-img2.jpg" alt="test写真2">
 			</picture>
 		</div>
@@ -86,8 +86,8 @@
 		<div class="contents__wrap">
 			<div class="main__new-info">
 				<ul class="new-info__list">
-					<li class="new-info__list__items"><a href="#new-items">New Item Arrival!!</a></li>
-					<li class="new-info__list__items"><A href="#new-items">New Item Arrival!!</A></li>
+					<li class="new-info__list__items"><a href="#items">New Item Arrival!!</a></li>
+					<li class="new-info__list__items"><A href="#items">New Item Arrival!!</A></li>
 				</ul>
 			</div>
 			<section id="about-nina" class="main__about">
@@ -240,8 +240,8 @@
 				</div>
 			</section>
 
-			<section id="new-items" class="main__new-items">
-				<h2 class="sub__title">New items</h2>
+			<section id="items" class="main__items">
+				<h2 class="sub__title">Items</h2>
 				<div class="container">
 					<div class="new-items__details">
 						<picture class="new-items__img">
@@ -258,15 +258,6 @@
 						</picture>
 					</div>
 				</div>
-			</section>
-
-			<section id="items" class="main__items">
-				<h2 class="sub__title">Items</h2>
-				<ul class="container jump-item-list">
-					<li class="jump-item-list_goods"><a href="#">Earrings</a></li>
-					<li class="jump-item-list_goods"><a href="#">Ring</a></li>
-					<li class="jump-item-list_goods"><a href="#">Necklace</a></li>
-				</ul>
 				<div class="items__img-slide-show main-items-slide">
 					<picture class="items__slide-show">
 						<source media="(min-width: 960px)" srcset="images/test1.jpg">
@@ -331,20 +322,12 @@
 						<img src="images/test3.jpg" alt="test写真3">
 					</picture>
 				</div>
-			</section>
-
-			<section id="jump-and-buy" class="main__links">
-				<h2 class="sub__title">Jump & BUY</h2>
-				<div class="links__buy-links card-design">
-					<p class="links__base-link card-design__description">各アクセサリーのご購入は、下記をクリックしてください。※BASEネットショップ管理画面へ移動します。</p>
-				</div>
-				<div class="links__btn" >
-					<a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener"><img class="links__base-icon" src="images/base_logo_horizontal_black.png" alt="BASEネットショップへ"></a>
-				</div>
-				<div class="links__sns-design">
-					<div class="links__instagram-api"></div>
-					<div class="links__facebook-api"></div>
-				</div>
+				<p class="jump-item-list_goods"><a href="#">All Items</a></p>
+				<!-- <div class="container jump-item-list">
+					<li class="jump-item-list_goods"><a href="#">Earring</a></li>
+					<li class="jump-item-list_goods"><a href="#">Ring</a></li>
+					<li class="jump-item-list_goods"><a href="#">Necklace</a></li>
+				</div> -->
 			</section>
 
 		</div>
@@ -353,6 +336,10 @@
 
 	<footer id="footer">
 		<div class="footer-wrap">
+			<p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。※BASEネットショップ管理画面へ移動します。</p>
+			<div class="links__btn">
+				<a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener"><img class="links__base-icon" src="images/base_logo_horizontal_black.png" alt="BASEネットショップへ"></a>
+			</div>
 			<p class="official-sns">公式SNS</p>
 			<ul class="container footer__sns-icon">
 				<li class="sns-icon__instagram">
