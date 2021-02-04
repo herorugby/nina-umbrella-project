@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>items</title>
+
+    <link rel="stylesheet" href="stylesheets/singlepage.css">
+    <link rel="stylesheet" href="stylesheets/items.css">
+
+    <!-- google fonts sawarabi lora -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+    <!-- read css of slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- cdn of jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- cdn of slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- read fontsawesome -->
+    <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-wrap">
+                <h1 class="top__title">
+                    <a class="top__link" href="index.html">
+                        <img class="top__logo" src="images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
+                    </a>
+                </h1>
+                <ul class="container breadcrumb__list">
+                    <li class="breadcrumb__item"><a href="index.html">HOME</a></li>
+                    <li class="breadcrumb__item">>></li>
+                    <li class="breadcrumb__item">Items</li>
+                </ul>
+            </div>
+            <nav id="gnav" class="container gnav__container">
+                <ul class="gnav__list">
+                    <li class="gnav__list__item"><a href="index.html">HOME & About</a></li>
+                    <!-- <li class="gnav__list__item"><a href="#about-nina">About</a></li> -->
+                    <!-- <li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li> -->
+                    <li class="gnav__list__item"><a href="workshop.html">Workshop</a></li>
+                    <!-- <li class="gnav__list__item"><a href="#new-items">New items</a></li> -->
+                    <li class="gnav__list__item"><a href="items.html">Items</a></li>
+                    <!-- <li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li> -->
+                    <!-- <li class="gnav__list__item"><a href="#">Contact</a></li> -->
+                </ul>
+            </nav>
+            <div class="hamburger-icon">
+                <i id="hamburger-btn" class="fas fa-list-ul"></i>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrap">
+                <section id="items" class="main__items">
+                    <h2 class="sub__title">Items</h2>
+                    <div class="items__img-slide-show main-items-slide">
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+                            <img src="images/test1.jpg" alt="test写真1">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                            <img src="images/test2.jpg" alt="test写真2">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test3.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test3.jpg">
+                            <img src="images/test3.jpg" alt="test写真3">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                            <img src="images/test2.jpg" alt="test写真2">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+                            <img src="images/test1.jpg" alt="test写真1">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test3.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test3.jpg">
+                            <img src="images/test3.jpg" alt="test写真3">
+                        </picture>
+                    </div>
+                    <div class="items__img-slide-show sub-items-slide">
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+                            <img src="images/test1.jpg" alt="test写真1">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                            <img src="images/test2.jpg" alt="test写真2">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test3.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test3.jpg">
+                            <img src="images/test3.jpg" alt="test写真3">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                            <img src="images/test2.jpg" alt="test写真2">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test1.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test1.jpg">
+                            <img src="images/test1.jpg" alt="test写真1">
+                        </picture>
+                        <picture class="items__slide-show">
+                            <source media="(min-width: 960px)" srcset="images/test3.jpg">
+                            <source media="(min-width: 560px)" srcset="images/test3.jpg">
+                            <img src="images/test3.jpg" alt="test写真3">
+                        </picture>
+                    </div>
+                    <!-- <div class="container"> -->
+                        <div class="new-items__details">
+                            <picture class="new-items__img">
+                                <source media="(min-width: 960px)" srcset="images/test1.jpg">
+                                <source media="(min-width: 560px)" srcset="images/test1.jpg">
+                                <img src="images/test1.jpg" alt="test写真1">
+                            </picture>
+                        </div>
+                        <div class="new-items__details">
+                            <picture class="new-items__img">
+                                <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                                <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                                <img src="images/test2.jpg" alt="test写真2">
+                            </picture>
+                        </div>
+                    <!-- </div> -->
+                    <p class="jump-item-list_goods"><a href="#">All Items</a></p>
+                    <!-- <div class="container jump-item-list">
+                					<li class="jump-item-list_goods"><a href="#">Earring</a></li>
+                					<li class="jump-item-list_goods"><a href="#">Ring</a></li>
+                					<li class="jump-item-list_goods"><a href="#">Necklace</a></li>
+                				</div> -->
+                </section>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer-wrap">
+                <p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。※BASEネットショップ管理画面へ移動します。</p>
+                <div class="links__btn">
+                    <a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener"><img class="links__base-icon" src="images/base_logo_horizontal_black.png" alt="BASEネットショップへ"></a>
+                </div>
+                <p class="official-sns">公式SNS</p>
+                <ul class="container footer__sns-icon">
+                    <li class="sns-icon__instagram">
+                        <a href="https://www.instagram.com/nina_bysakiokamura/?igshid=ir99440gxhwq" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="sns-icon__facebook">
+                        <a href="https://www.facebook.com/nina.umbrella.project/" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__policy">
+                    <p class="policy__trade"><a href="trade-policy.html">特定商取引法に基づく表記</a></p>
+                    <p class="policy__privacy"><a href="privacy-policy.html">プライバシーポリシー</a></p>
+                </div>
+                <div class="footer__contents__copy-right">
+                    <p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>
+                </div>
+            </div>
+        </footer>
+        <!-- read js file -->
+        <script src="js/index.js"></script>
+    </body>
+    </html>

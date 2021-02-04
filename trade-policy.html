@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nina umbrella project|特定商取引法に基づく表記</title>
+
     <link rel="stylesheet" href="stylesheets/policy.css">
+
+    <!-- google fonts sawarabi lora -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
     <!-- cdn of jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,19 +19,36 @@
 </head>
 <body>
     <header>
-        <h1 class="top__title">
-            <a class="top__link" href="index.html">
-                <img class="top__logo" src="images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
-            </a>
-        </h1>
-        <ul class="container breadcrumb__list">
-            <li class="breadcrumb__item"><a href="index.html">HOME</a></li>
-            <li class="breadcrumb__item">> 特定商取引法に基づく表記</li>
-        </ul>
+        <div class="header-wrap">
+            <h1 class="top__title">
+                <a class="top__link" href="index.html">
+                    <img class="top__logo" src="images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
+                </a>
+            </h1>
+            <ul class="container breadcrumb__list">
+                <li class="breadcrumb__item"><a href="index.html">HOME</a></li>
+                <li class="breadcrumb__item">>></li>
+                <li class="breadcrumb__item">特定商取引法に基づく表記</li>
+            </ul>
+        </div>
+        <nav id="gnav" class="container gnav__container">
+            <ul class="gnav__list">
+                <li class="gnav__list__item"><a href="index.html">HOME & About</a></li>
+                <!-- <li class="gnav__list__item"><a href="#about-nina">About</a></li> -->
+                <!-- <li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li> -->
+                <li class="gnav__list__item"><a href="workshop.html">Workshop</a></li>
+                <!-- <li class="gnav__list__item"><a href="#new-items">New items</a></li> -->
+                <li class="gnav__list__item"><a href="items.htmls">Items</a></li>
+                <!-- <li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li> -->
+                <!-- <li class="gnav__list__item"><a href="#">Contact</a></li> -->
+            </ul>
+        </nav>
+        <div class="hamburger-icon">
+            <i id="hamburger-btn" class="fas fa-list-ul"></i>
+        </div>
     </header>
-
     <main>
-        <div class="wrap">
+        <div class="main-wrap">
             <h2 class="sub__title">特定商取引法に基づく表記</h2>
 
             <section class="sec-block">
@@ -71,7 +93,6 @@
             </section>
         </div>
     </main>
-
     <footer id="footer">
         <div class="footer-wrap">
             <p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。※BASEネットショップ管理画面へ移動します。</p>
@@ -91,9 +112,9 @@
                     </a>
                 </li>
             </ul>
-            <div class="container footer__policy">
-                <p class="policy__trade"><a href="#">特定商取引法に基づく表記</a></p>
-                <p class="policy__privacy"><a href="#">プライバシーポリシー</a></p>
+            <div class="footer__policy">
+                <p class="policy__trade"><a href="trade-policy.html">特定商取引法に基づく表記</a></p>
+                <p class="policy__privacy"><a href="privacy-policy.html">プライバシーポリシー</a></p>
             </div>
             <div class="footer__contents__copy-right">
                 <p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>

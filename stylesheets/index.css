@@ -32,6 +32,22 @@ img {
   width: 100%;
 }
 
+/* fonts setting */
+h1,
+h2,
+li,
+a,
+.top__link a {
+  font-family: "Lora", serif;
+}
+
+h3,
+p,
+.policy__trade a,
+.policy__privacy a {
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
 /* Header */
 /* css less than 559px ~mobile.ver~ */
 h1 {

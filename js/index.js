@@ -31,7 +31,7 @@ $(function () {
 
     // gnavアイテムをクリックでgnavがスライドアウト
     $(".gnav__list__item").on("click", function () {
-        $("#gnav").toggleClass("is-active");
+        $("#gnav").fadeOut();
         $(".hamburger-icon").next().slideToggle();
         $("i").toggleClass("fa-list-ul");
         $("i").toggleClass("fa-times");
