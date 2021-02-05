@@ -1,5 +1,4 @@
 // hamburger menu
-
 // when to come hamburger icon
 // $(function () {
 //     $(window).on('load resize', function () {
@@ -19,29 +18,52 @@
 //     });
 // });
 
-// how to display hamburger icon
+// to display hamburger icon
 $(function () {
-    // ハンバーガーアイコンをクリックでgnavがスライドイン、アウト
     $(".hamburger-icon").on("click", function () {
         $("#gnav").toggleClass("is-active");
         $(this).next().slideToggle();
         $("i").toggleClass("fa-list-ul");
         $("i").toggleClass("fa-times");
     });
-
-    // gnavアイテムをクリックでgnavがスライドアウト
-    $(".gnav__list__item").on("click", function () {
-        $("#gnav").fadeOut();
-        $(".hamburger-icon").next().slideToggle();
-        $("i").toggleClass("fa-list-ul");
-        $("i").toggleClass("fa-times");
-    });
 });
 
+// for tablet & desktop fixed
+$(window).scroll(function() {
+    fixedGnav();
+});
+
+function fixedGnav() {
+    var $fixed = $("#gnav");
+    var $startPos = $('.new-info__list__items');
+    var $startPosTop = $startPos.offset().top;
+    var $winScroll = $(window).scrollTop();
+    if($winScroll > $startPosTop) {
+      $fixed.addClass('is-fixed');
+    } else {
+      $fixed.removeClass('is-fixed');
+    }
+}
+
+
+
+// $(function () {
+    // var fixedPos = $(".gnav__container");
+    // var fixedTop = fixedPos.offset().top;
+    // var winScroll = $(window).scrollTop();
+    // $(window).scroll(function () {
+        // alert(fixedTop);
+    //     if (winScroll >= fixedTop) {
+    //         fixedPos.addClass("is-fixed");
+    //     } else {
+    //         fixedPos.removeClass("is-fixed");
+    //     }
+    // });
+// });
 
 // slide show with slick
 $(function() {
-    $('.main__img-slide-show').slick( {
+    $('.header__img-slide-show').slick( {
         autoplay: true,
         autoplaySpeed: 2500,
         dots: false,
@@ -51,31 +73,6 @@ $(function() {
         swipe: false,
         pauseOnHover: false,
         pauseOnFocus: false,
-    });
-});
-
-
-// gallery slide show pics wuth slick
-$(function() {
-    $('.main-items-slide').slick( {
-        asNavFor: '.sub-items-slide',
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        arrows: false,
-        fade: true,
-    });
-    $('.sub-items-slide').slick( {
-        asNavFor: '.main-items-slide',
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        accessibility: true,
-        speed: 400,
-        arrows: false,
-        focusOnSelect: true,
     });
 });
 

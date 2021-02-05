@@ -51,7 +51,7 @@ h3,
 p,
 .policy__trade a,
 .policy__privacy a {
-  font-family: "Sawarabi Mincho", sans-serif;
+  font-family: "Noto Serif JP", serif;
 }
 
 /* Header */
@@ -157,6 +157,38 @@ h1 {
 @media screen and (min-width: 560px) {
   h1 {
     font-size: 1.75rem;
+  }
+  #gnav {
+    transform: none;
+    width: 100%;
+    height: 10vh;
+    opacity: 0;
+    /* background: #fff; */
+  }
+
+  .gnav__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  #gnav.is-fixed {
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .gnav__list__item {
+    display: inline-block;
+    width: 30%;
+    padding: 0;
+  }
+
+  .gnav__list__item a {
+    font-size: 1.125rem;
+  }
+
+  .hamburger-icon,
+  #hamburger-btn {
+    display: none;
   }
 }
 
@@ -312,21 +344,56 @@ p {
 
 .sns-icon__instagram,
 .sns-icon__facebook {
-  font-size: 1.375rem;
   margin: 3%;
 }
 
-.fa-instagram {
+.fa-instagram-square {
+  font-size: 1.375rem;
   color: #cf2e92;
 }
 
 .fa-facebook {
+  font-size: 1.375rem;
   color: #1877f2;
+}
+
+.policy__privacy a,
+.policy__trade a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.policy__privacy a:visited,
+.policy__trade a:visited {
+  color: #000;
 }
 
 /* css 561px or more ~tablet.ver~ */
 /* Footer */
 @media screen and (min-width: 560px) {
+  .links__btn {
+    width: 60%;
+  }
+
+  .links__base-icon {
+    width: 35%;
+  }
+
+  .sns-icon__instagram,
+  .sns-icon__facebook {
+    margin: 3%;
+  }
+
+  .fa-instagram-square,
+  .fa-facebook {
+    font-size: 1.625rem;
+  }
+
+  .policy__privacy a,
+  .policy__trade a {
+    font-size: 0.9375rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */

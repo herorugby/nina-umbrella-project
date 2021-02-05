@@ -7,13 +7,13 @@
 
 	<link rel="stylesheet" href="stylesheets/index.css">
 
-	<!-- google fonts sawarabi lora -->
+	<!-- google fonts notoserifjp lora dancingscript -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@600&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
 
 	<!-- read css of slick -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@600&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
 
 	<!-- read css of modaal
 	 -->
@@ -39,33 +39,14 @@
 </head>
 <div class="all-wrap">
 	<!-- 上のwrapは不要かも -->
-<!-- src="images/small-device-logo.png" -->
 	<header id="header top">
 		<a class="top__link" href="#top">
 			<img class="top__logo" src="images/large-device-logo.png" alt="nina-umbrella-projectのロゴ">
 			<h1 class="top__title">nina</h1>
-			<p>Be with you</p>
+			<p class="top__title__catch">be with you</p>
 		</a>
 
-		<nav id="gnav" class="container gnav__container">
-			<ul class="gnav__list">
-				<li class="gnav__list__item"><a href="index.html">HOME & About</a></li>
-				<!-- <li class="gnav__list__item"><a href="#about-nina">About</a></li> -->
-				<!-- <li class="gnav__list__item"><a href="#about-sle">About sle/lupus</a></li> -->
-				<li class="gnav__list__item"><a href="workshop.html">Workshop</a></li>
-				<!-- <li class="gnav__list__item"><a href="#new-items">New items</a></li> -->
-				<li class="gnav__list__item"><a href="items.html">Items</a></li>
-				<!-- <li class="gnav__list__item"><a href="#jump-and-buy">Jump & BUY</a></li> -->
-				<!-- <li class="gnav__list__item"><a href="#">Contact</a></li> -->
-			</ul>
-		</nav>
-		<div class="hamburger-icon">
-			<i id="hamburger-btn" class="fas fa-list-ul"></i>
-		</div>
-	</header>
-
-	<main id="main">
-		<div class="main__img-slide-show">
+		<div class="header__img-slide-show">
 			<picture class="top__img">
 				<source media="(min-width: 960px)" srcset="images/test-main-img1.jpeg">
 				<source media="(min-width: 560px)" srcset="images/test-main-img1.jpeg">
@@ -88,6 +69,19 @@
 			</picture>
 		</div>
 
+		<nav id="gnav" class="container gnav__container">
+			<ul class="gnav__list">
+				<li class="gnav__list__item"><a href="index.html">HOME & About</a></li>
+				<li class="gnav__list__item"><a href="workshop.html">Workshop</a></li>
+				<li class="gnav__list__item"><a href="items.html">Items</a></li>
+			</ul>
+		</nav>
+		<div class="hamburger-icon">
+			<i id="hamburger-btn" class="fas fa-list-ul"></i>
+		</div>
+	</header>
+
+	<main id="main">
 		<div class="contents__wrap">
 			<div class="main__new-info">
 				<ul class="new-info__list">
@@ -173,175 +167,13 @@
 				</div>
 			</section>
 
-			<!-- <section id="workshop" class="main__workshop">
-				<h2 class="sub__title">Workshop</h2>
-				<div class="container workshop__details">
-					<div class="workshop__details__contents card-design">
-						<h3 class="contents__title">ninaで制作する<br>アクセサリーの素材について</h3>
-						<picture class="workshop__img card-design__img">
-							<source media="(min-width: 960px)" srcset="images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="images/test1.jpg">
-							<img src="images/test1.jpg" alt="test写真1">
-						</picture>
-						<p class="workshop__description card-design__description">
-								nina で制作するアクセサリーに使用する素材は以下の通りです。<br>
-								・14kgf / 14金ゴールドフィルド
-								(ピアスホール、キャッチ、全ての連結パーツ、
-								ワイヤー、チェーン、アレンジパーツ)<br>
-								・淡水パール<br>
-								・シェルパール<br>
-								・シェル<br>
-								・天然石<br>
-								・ガラスビーズ<br>
-								・アクリルビーズ<br>
-								・シリコンキャッチ<br>
-								・樹脂ノンホールピアス<br>
-								※予告なく、素材が変更、追加される場合があります。<br>
-								※アクセサリーをご購入の際は、各商品の商品説明を必ずお読みください。
-							</p>
-					</div>
-					<div class="workshop__details__contents card-design">
-						<h3 class="contents__title">”14kgf”とは</h3>
-						<picture class="workshop__img card-design__img">
-							<source media="(min-width: 960px)" srcset="images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="images/test1.jpg">
-							<img src="images/test1.jpg" alt="test写真1">
-						</picture>
-						<p class="workshop__description card-design__description">
-								手軽に本物の金の輝きを楽しめる、欧米ではポピュラーな素材です。<br>
-								金属の総重量のうち、1/20以上が14金で出来ている金張り加工のことを言います。<br>
-								また、通常の金メッキよりはるかに金の層が厚く、長期間使用しても剥がれることなく、金属アレルギーに優しい素材とされています。<br>
-								また、その輝きはゴールドアクセサリーと程近く、美しいと言われています。<br>
-								(一般的な金メッキは薄く"コーティング"されているのに比べ、ゴールドフィルドは、厚い金のプレートを"圧着"しており、厚みが約100倍あります。)
-							</p>
-					</div>
-					<div class="workshop__details__contents card-design">
-						<h3 class="contents__title">”14kgf”のお手入れ方法</h3>
-						<picture class="workshop__img card-design__img">
-							<source media="(min-width: 960px)" srcset="images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="images/test1.jpg">
-							<img src="images/test1.jpg" alt="test写真1">
-						</picture>
-						<p class="workshop__description card-design__description">
-								14kgfは、ゴールドアクセサリーと同様、着用後に柔らかいコットンや布（メガネ用の布がおすすめ）で、包み込むように汗や皮脂を拭き取ることで美しく長く使用する事ができます。<br>
-								また、身に着けたままお風呂に入るのは、劣化を加速させる原因となることがあります。<br>
-								天然石や真珠が付いている場合は、破損防止のため優しくお手入れしてください。<br>
-								普段のお手入れは拭くだけで結構ですが、長く愛用しているうちに稀に酸化して黒ずみが気になる可能性があります。<br>
-								その場合は市販のジュエリークリーナーの使用をお勧めします。
-							</p>
-					</div>
-					<div class="workshop__details__contents card-design">
-						<h3 class="contents__title">お取り扱いの注意点</h3>
-						<picture class="workshop__img card-design__img">
-							<source media="(min-width: 960px)" srcset="images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="images/test1.jpg">
-							<img src="images/test1.jpg" alt="test写真1">
-						</picture>
-						<p class="workshop__description card-design__description">
-								繊細な天然パーツや柔らかい14kgfのピアスポスト、連結パーツを使用しておりますので、お取り扱いには十分お気をつけ下さい。<br>
-								洋服の脱着には、ピアスを外した状態をお勧めします。
-							</p>
-					</div>
-				</div>
-			</section> -->
-
-			<!-- <section id="items" class="main__items">
-				<h2 class="sub__title">Items</h2>
-				<div class="container">
-					<div class="new-items__details">
-						<picture class="new-items__img">
-							<source media="(min-width: 960px)" srcset="images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="images/test1.jpg">
-							<img src="images/test1.jpg" alt="test写真1">
-						</picture>
-					</div>
-					<div class="new-items__details">
-						<picture class="new-items__img">
-							<source media="(min-width: 960px)" srcset="images/test2.jpg">
-							<source media="(min-width: 560px)" srcset="images/test2.jpg">
-							<img src="images/test2.jpg" alt="test写真2">
-						</picture>
-					</div>
-				</div>
-				<div class="items__img-slide-show main-items-slide">
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test1.jpg">
-						<source media="(min-width: 560px)" srcset="images/test1.jpg">
-						<img src="images/test1.jpg" alt="test写真1">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test2.jpg">
-						<source media="(min-width: 560px)" srcset="images/test2.jpg">
-						<img src="images/test2.jpg" alt="test写真2">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test3.jpg">
-						<source media="(min-width: 560px)" srcset="images/test3.jpg">
-						<img src="images/test3.jpg" alt="test写真3">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test2.jpg">
-						<source media="(min-width: 560px)" srcset="images/test2.jpg">
-						<img src="images/test2.jpg" alt="test写真2">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test1.jpg">
-						<source media="(min-width: 560px)" srcset="images/test1.jpg">
-						<img src="images/test1.jpg" alt="test写真1">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test3.jpg">
-						<source media="(min-width: 560px)" srcset="images/test3.jpg">
-						<img src="images/test3.jpg" alt="test写真3">
-					</picture>
-				</div>
-				<div class="items__img-slide-show sub-items-slide">
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test1.jpg">
-						<source media="(min-width: 560px)" srcset="images/test1.jpg">
-						<img src="images/test1.jpg" alt="test写真1">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test2.jpg">
-						<source media="(min-width: 560px)" srcset="images/test2.jpg">
-						<img src="images/test2.jpg" alt="test写真2">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test3.jpg">
-						<source media="(min-width: 560px)" srcset="images/test3.jpg">
-						<img src="images/test3.jpg" alt="test写真3">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test2.jpg">
-						<source media="(min-width: 560px)" srcset="images/test2.jpg">
-						<img src="images/test2.jpg" alt="test写真2">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test1.jpg">
-						<source media="(min-width: 560px)" srcset="images/test1.jpg">
-						<img src="images/test1.jpg" alt="test写真1">
-					</picture>
-					<picture class="items__slide-show">
-						<source media="(min-width: 960px)" srcset="images/test3.jpg">
-						<source media="(min-width: 560px)" srcset="images/test3.jpg">
-						<img src="images/test3.jpg" alt="test写真3">
-					</picture>
-				</div>
-				<p class="jump-item-list_goods"><a href="#">All Items</a></p>
-				<div class="container jump-item-list">
-									<li class="jump-item-list_goods"><a href="#">Earring</a></li>
-									<li class="jump-item-list_goods"><a href="#">Ring</a></li>
-									<li class="jump-item-list_goods"><a href="#">Necklace</a></li>
-								</div>
-			</section> -->
-
 		</div>
 
 	</main>
 
 	<footer id="footer">
 		<div class="footer-wrap">
-			<p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。※BASEネットショップ管理画面へ移動します。</p>
+			<p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。<br>※BASEネットショップ管理画面へ移動します。</p>
 			<div class="links__btn">
 				<a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener"><img class="links__base-icon" src="images/base_logo_horizontal_black.png" alt="BASEネットショップへ"></a>
 			</div>
@@ -349,7 +181,7 @@
 			<ul class="container footer__sns-icon">
 				<li class="sns-icon__instagram">
 					<a href="https://www.instagram.com/nina_bysakiokamura/?igshid=ir99440gxhwq" target="_blank" rel="noopener">
-						<i class="fab fa-instagram"></i>
+						<i class="fab fa-instagram-square"></i>
 					</a>
 				</li>
 				<li class="sns-icon__facebook">
