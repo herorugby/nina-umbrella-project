@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Footer */
+/* css less than 559px ~mobile.ver~ */
+.footer-wrap {
+  width: 94%;
+  height: auto;
+  padding: 2% 3%;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.footer__base-link {
+  color: #666;
+}
+
+.links__btn {
+  width: 60%;
+  margin: 1.5% auto 3.5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.links__btn a {
+  display: block;
+}
+
+.links__base-icon {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.official-sns {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+.official-sns:before,
+.official-sns:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #666;
+}
+
+.official-sns:before {
+  left: 0;
+}
+
+.official-sns:after {
+  right: 0;
+}
+
+.footer__sns-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-icon__instagram,
+.sns-icon__facebook {
+  margin: 1% 3%;
+}
+
+.fa-instagram-square {
+  font-size: 1.375rem;
+  color: #cf2e92;
+}
+
+.fa-facebook {
+  font-size: 1.375rem;
+  color: #1877f2;
+}
+
+.policy__privacy a,
+.policy__trade a {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.policy__privacy a:visited,
+.policy__trade a:visited {
+  color: #000;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Footer */
+@media screen and (min-width: 560px) {
+  .footer-wrap {
+    padding-bottom: 1%;
+  }
+
+  .links__btn {
+    width: 50%;
+  }
+
+  .links__base-icon {
+    width: 35%;
+  }
+
+  .fa-instagram-square,
+  .fa-facebook {
+    font-size: 1.75rem;
+  }
+
+  .policy__privacy a,
+  .policy__trade a {
+    font-size: 0.9375rem;
+  }
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Footer */
+@media screen and (min-width: 960px) {
+  .footer-wrap {
+    padding-bottom: 0.5%;
+  }
+
+  .links__btn {
+    width: 30%;
+  }
+
+  .links__base-icon {
+    width: 30%;
+  }
+
+  .fa-instagram-square,
+  .fa-facebook {
+    font-size: 2.125rem;
+  }
+
+  .policy__privacy a,
+  .policy__trade a {
+    font-size: 1rem;
+  }
+}
