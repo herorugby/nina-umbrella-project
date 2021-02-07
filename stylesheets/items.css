@@ -62,23 +62,28 @@
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
-  .item-container {
-    display: flex;
+  /* items */
+  .main-items-slide {
+    width: 90%;
+    margin: 0 auto;
   }
 
+  /* new-items */
   .new-items-container,
   .all-items-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    /* text-align: center; */
-    /* width: 100%; */
-    /* min-width: 90%; */
+    text-align: center;
+  }
+
+  .new-items__details,
+  .all-items__details {
+    width: 50%;
   }
 
   .new-items__details picture img,
   .all-items__details picture img {
-    width: 30%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -86,4 +91,38 @@
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
+  /* items */
+  .main-items-slide {
+    width: 65%;
+  }
+
+  .sub-items-slide {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* new-items */
+  .new-items__details {
+    width: 33.33333333333333333%;
+  }
+
+  .new-items__details picture img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .item-container {
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+  }
+
+  .widget-area {
+    width: 28%;
+    margin: 0 auto 1%;
+    border: 1px solid #000;
+  }
+  .all-items-container {
+    width: 70%;
+  }
 }
