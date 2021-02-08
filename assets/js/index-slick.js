@@ -1,6 +1,6 @@
 // gallery slide show pics wuth slick
-$(function() {
-    $('.main-items-slide').slick( {
+jQuery(function() {
+    jQuery('.main-items-slide').slick( {
         asNavFor: '.sub-items-slide',
         infinite: true,
         slidesToShow: 1,
@@ -10,7 +10,7 @@ $(function() {
         arrows: false,
         fade: true,
     });
-    $('.sub-items-slide').slick( {
+    jQuery('.sub-items-slide').slick( {
         asNavFor: '.main-items-slide',
         infinite: true,
         slidesToShow: 3,

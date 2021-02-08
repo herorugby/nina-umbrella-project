@@ -18,26 +18,27 @@
 //     });
 // });
 
+
 // to display hamburger icon
-$(function () {
-    $(".hamburger-icon").on("click", function () {
-        $("#gnav").toggleClass("is-active");
-        $(this).next().slideToggle();
-        $("i").toggleClass("fa-list-ul");
-        $("i").toggleClass("fa-times");
+jQuery(function () {
+    jQuery(".hamburger-icon").on("click", function () {
+        jQuery("#gnav").toggleClass("is-active");
+        jQuery(this).next().slideToggle();
+        jQuery("i").toggleClass("fa-list-ul");
+        jQuery("i").toggleClass("fa-times");
     });
 });
 
 // for tablet & desktop fixed
-$(window).scroll(function() {
+jQuery(window).scroll(function() {
     fixedGnav();
 });
 
 function fixedGnav() {
-    var $fixed = $("#gnav");
-    var $startPos = $('.new-info__list__items');
+    var $fixed = jQuery("#gnav");
+    var $startPos = jQuery('.new-info__list__items');
     var $startPosTop = $startPos.offset().top;
-    var $winScroll = $(window).scrollTop();
+    var $winScroll = jQuery(window).scrollTop();
     if($winScroll > $startPosTop) {
       $fixed.addClass('is-fixed');
     } else {
@@ -62,8 +63,8 @@ function fixedGnav() {
 // });
 
 // slide show with slick
-$(function() {
-    $('.header__img-slide-show').slick( {
+jQuery(function() {
+    jQuery('.header__img-slide-show').slick( {
         autoplay: true,
         autoplaySpeed: 2500,
         dots: false,
@@ -77,9 +78,9 @@ $(function() {
 });
 
 // copy right get full year
-$(function() {
+jQuery(function() {
   let dayOption = new Date();
   let myYear = dayOption.getFullYear();
-  let copyRight = $("#copyRight");
+  let copyRight = jQuery("#copyRight");
       copyRight.text("2020-" + myYear);
 });
