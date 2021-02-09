@@ -22,7 +22,7 @@ function add_nina_styles()
         // page-workshop css files
         wp_enqueue_style('nina_page_workshop_style', get_template_directory_uri() . '/assets/stylesheets/otherspage-header.css');
         wp_enqueue_style('nina_page_workshop_style', get_template_directory_uri() . '/assets/stylesheets/page-main.css');
-    } else {
+    } else if (is_page('trade') || is_page('privacy')) {
         // page-privacy $ page-trade css files
         wp_enqueue_style('nina_page_style', get_template_directory_uri() . '/assets/stylesheets/otherspage-header.css');
         wp_enqueue_style('nina_page_style', get_template_directory_uri() . '/assets/stylesheets/policy.css');

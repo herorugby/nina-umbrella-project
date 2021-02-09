@@ -18,8 +18,8 @@
             </li>
         </ul>
         <div class="container footer__policy">
-            <p class="policy__privacy"><a href="privacy-policy.html">プライバシーポリシー</a></p>
-            <p class="policy__trade"><a href="trade-policy.html">特定商取引法に基づく表記</a></p>
+            <p class="policy__privacy"><a href="page-privacy.php">プライバシーポリシー</a></p>
+            <p class="policy__trade"><a href="page-trade.php">特定商取引法に基づく表記</a></p>
         </div>
         <div class="footer__contents__copy-right">
             <p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>
