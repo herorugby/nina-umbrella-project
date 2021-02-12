@@ -15,7 +15,7 @@ jQuery(window).scroll(function() {
 
 function fixedGnav() {
     var fixed = jQuery("#gnav");
-    var startPos = jQuery('.new-info__list__items');
+    var startPos = jQuery('#about-nina');
     var startPosTop = startPos.offset().top;
     var winScroll = jQuery(window).scrollTop();
     if(winScroll > startPosTop) {
