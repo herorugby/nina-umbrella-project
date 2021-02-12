@@ -28,10 +28,6 @@ p,
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
-h1 {
-  font-size: 1.625rem;
-}
-
 .top__title {
   width: 50%;
   margin: 0 auto;
@@ -132,10 +128,6 @@ h1 {
     padding-top: 1%;
   }
 
-  h1 {
-    font-size: 1.75rem;
-  }
-
   .top__title {
     width: 40%;
   }
@@ -185,10 +177,6 @@ h1 {
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
-  h1 {
-    font-size: 1.875rem;
-  }
-
   .top__title {
     width: 30%;
   }

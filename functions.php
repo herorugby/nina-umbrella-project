@@ -1,32 +1,47 @@
 <?php
 
 /**
+ * <title>タグを出力する
+ */
+add_theme_support('title-tag');
+
+function nina_document_title_separetor($separator)
+{
+    $separator = '|';
+    return $separator;
+}
+add_filter('document_title_separator', 'nina_document_title_separetor');
+
+function nina_document_title_parts($title)
+{
+    if (is_home()) {
+        unset($title['tagline']);
+        $title['title'] = "Always sparkle with 'nina'";
+    }
+    return $title;
+}
+add_filter('document_title_parts', 'nina_document_title_parts');
+
+/**
  * add css files
  *
  * @return void
  */
 function add_nina_styles()
 {
-    // common css file
     wp_enqueue_style('nina_reset_style', get_template_directory_uri() . '/assets/stylesheets/reset.css');
-    wp_enqueue_style('nina_footer_style', get_template_directory_uri() . '/assets/stylesheets/footer.css');
     if (is_front_page()) {
-        // front-page css file
         wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
-    } else if (is_home()) {
-        // index css files
-        wp_enqueue_style('nina_index_style', get_template_directory_uri() . '/assets/stylesheets/otherspage-header.css');
-        wp_enqueue_style('nina_index_style', get_template_directory_uri() . '/assets/stylesheets/page-main.css');
-        wp_enqueue_style('nina_index_style', get_template_directory_uri() . '/assets/stylesheets/index-post-parts.css');
-    } else if (is_page('workshop')) {
-        // page-workshop css files
-        wp_enqueue_style('nina_page_workshop_style', get_template_directory_uri() . '/assets/stylesheets/otherspage-header.css');
-        wp_enqueue_style('nina_page_workshop_style', get_template_directory_uri() . '/assets/stylesheets/page-main.css');
-    } else if (is_page('trade') || is_page('privacy')) {
-        // page-privacy $ page-trade css files
-        wp_enqueue_style('nina_page_style', get_template_directory_uri() . '/assets/stylesheets/otherspage-header.css');
-        wp_enqueue_style('nina_page_style', get_template_directory_uri() . '/assets/stylesheets/policy.css');
     }
+    if (is_archive() || is_page('workshop')) {
+        wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
+        wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
+    }
+    if (is_page('privacy') || is_page('trade')) {
+        wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
+        wp_enqueue_style('nina_policy_style', get_template_directory_uri() . '/assets/stylesheets/policy.css');
+    }
+    wp_enqueue_style('nina_footer_style', get_template_directory_uri() . '/assets/stylesheets/footer.css');
 }
 add_action('wp_enqueue_scripts', 'add_nina_styles');
 
@@ -44,35 +59,9 @@ function add_nina_scripts()
     // slick jquery plugin cdn
     wp_enqueue_script('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js');
     if (is_front_page()) {
-        wp_enqueue_script('nina-main', get_template_directory_uri() . '/assets/js/front-page.js');
-    } else if (is_home()) {
-        wp_enqueue_script('nina-main', get_template_directory_uri() . '/assets/js/page.js');
-        wp_enqueue_script('nina-main', get_template_directory_uri() . '/assets/js/index-slick.js');
-    } else {
-        wp_enqueue_script('nina-main', get_template_directory_uri() . '/assets/js/page.js');
+        wp_enqueue_script('nina-main-js', get_template_directory_uri() . '/assets/js/front-page.js', '', '', true);
+    } else if (is_archive() || is_page('workshop') || is_page('privacy') || is_page('trade')) {
+        wp_enqueue_script('nina-workshop-js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
     }
 }
 add_action('wp_enqueue_scripts', 'add_nina_scripts');
-
-/**
- * <title>タグを出力する
- */
-add_theme_support('title-tag');
-
-function nina_document_title_separator($separator)
-{
-    $separator = '|';
-    return $separator;
-}
-
-add_filter('document_title_separator', 'nina_document_title_separator');
-
-function nina_document_title_parts($title)
-{
-    if (is_home()) {
-        unset($title['tagline']);
-        $title['title'] = 'nina is with you';
-    }
-    return $title;
-}
-add_filter('document_title_parts', 'nina_document_title_parts');

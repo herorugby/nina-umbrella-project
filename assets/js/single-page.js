@@ -3,19 +3,19 @@ jQuery(function () {
     jQuery(".hamburger-icon").on("click", function () {
         jQuery("#gnav").toggleClass("is-active");
         jQuery(this).next().slideToggle();
-        jQuery("#hamburger-btn").toggleClass("fa-l#hamburger-btnst-ul");
+        jQuery("#hamburger-btn").toggleClass("fa-list-ul");
         jQuery("#hamburger-btn").toggleClass("fa-times");
     });
 });
 
 // for tablet & desktop fixed
 jQuery(window).scroll(function() {
-    fixedGnav();
+    fixedGnavSinglePage();
 });
 
-function fixedGnav() {
+function fixedGnavSinglePage() {
     var fixed = jQuery("#gnav");
-    var startPos = jQuery('.new-info__list__items');
+    var startPos = jQuery('.breadcrumb__list');
     var startPosTop = startPos.offset().top;
     var winScroll = jQuery(window).scrollTop();
     if(winScroll > startPosTop) {
@@ -24,23 +24,6 @@ function fixedGnav() {
       fixed.removeClass('is-fixed');
     }
 }
-
-
-// slide show with slick
-jQuery(function() {
-    jQuery('.header__img-slide-show').slick( {
-        autoplay: true,
-        autoplaySpeed: 2500,
-        dots: false,
-        arrows: false,
-        infinite: true,
-        fade: true,
-        swipe: false,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-    });
-});
-
 
 // page top btn fadein and fadeout function
 jQuery(function () {

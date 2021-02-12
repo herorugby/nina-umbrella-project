@@ -1,22 +1,15 @@
-<!-- get head template -->
+<!-- get header -->
 <?php get_header(); ?>
 
 <main id="main">
 	<div class="contents__wrap">
-
 		<div class="main__new-info">
-			<!-- 新着アイテムがあるか判断 -->
-			<?php if (have_posts()) : ?>
-				<!-- 表示処理 -->
-				<ul class="new-info__list">
-					<?php while (have_posts()) : ?>
-						<?php the_post(); ?>
-						<li class="new-info__list__items"><a href="index.php#latest"><?php the_title(); ?></a></li>
-					<?php endwhile; ?>
-				</ul>
-			<?php endif; ?>
+			<p class="new-info__cap">!!New Item Arrival!!</p>
+			<ul class="new-info__list">
+				<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span>Earring014</li>
+				<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span>Ring012</li>
+			</ul>
 		</div>
-
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
@@ -103,5 +96,5 @@
 
 </main>
 
-<!-- get footer template -->
+<!-- get footer -->
 <?php get_footer(); ?>

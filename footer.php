@@ -17,17 +17,16 @@
                 </a>
             </li>
         </ul>
-        <div class="container footer__policy">
-            <p class="policy__privacy"><a href="page-privacy.php">プライバシーポリシー</a></p>
-            <p class="policy__trade"><a href="page-trade.php">特定商取引法に基づく表記</a></p>
+        <div class="footer__policy">
+            <p class="policy__privacy"><a href="<?php echo esc_url(home_url('/privacy')); ?>">プライバシーポリシー</a></p>
+            <p class="policy__trade"><a href="<?php echo esc_url(home_url('/trade')); ?>">特定商取引法に基づく表記</a></p>
         </div>
         <div class="footer__contents__copy-right">
             <p><small>&copy; <span id="copyRight"></span>nina umbrella project</small></p>
         </div>
     </div>
+    <a href="#top" class="page-up-icon"><i class="fas fa-angle-double-up"></i><br>UP</a>
 </footer>
-
-</div>
 
 <?php wp_footer(); ?>
 </body>

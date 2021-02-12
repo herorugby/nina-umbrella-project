@@ -2,28 +2,6 @@
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
-h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-}
-
-h5 {
-  font-size: 1.0625rem;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
 .sec-block {
   margin-top: 9%;
 }
@@ -35,27 +13,6 @@ p {
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
-  h2 {
-    font-size: 1.625rem;
-  }
-
-  h3 {
-    font-size: 1.375rem;
-  }
-
-  h4 {
-    font-size: 1.25rem;
-  }
-
-  h5 {
-    font-size: 1.1875rem;
-  }
-
-  p {
-    line-height: 1.6;
-    font-size: 1.125rem;
-  }
-
   .sec-block {
     margin-top: 3%;
   }
@@ -64,27 +21,6 @@ p {
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1.375rem;
-  }
-
-  h5 {
-    font-size: 1.3125rem;
-  }
-
-  p {
-    line-height: 1.7;
-    font-size: 1.25rem;
-  }
-
   .sec-block {
     margin-top: 2%;
   }
