@@ -23,7 +23,7 @@
     <header id="header top">
         <div class="header-wrap">
             <h1 class="top__title">
-                <a class="top__link" href="index.html">
+                <a class="top__link" href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
                 </a>
             </h1>
