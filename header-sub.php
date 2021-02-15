@@ -27,11 +27,11 @@
                     <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/small-device-logo.png" alt="nina-umbrella-projectのロゴ">
                 </a>
             </h1>
-            <ul class="container breadcrumb__list">
+            <!-- <ul class="container breadcrumb__list">
                 <li class="breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
                 <li class="breadcrumb__item">>></li>
                 <li class="breadcrumb__item"><?php the_title(); ?></li>
-            </ul>
+            </ul> -->
         </div>
         <nav id="gnav" class="container gnav__container">
             <ul class="gnav__list">

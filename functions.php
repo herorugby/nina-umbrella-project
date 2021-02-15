@@ -47,7 +47,7 @@ function add_nina_styles()
         wp_enqueue_style('remodal', get_template_directory_uri() . '/assets/stylesheets/remodal.css');
         wp_enqueue_style('remodal_theme', get_template_directory_uri() . '/assets/stylesheets/remodal-default-theme.css');
     }
-    if (is_archive() || is_page('workshop')) {
+    if (is_archive() || is_page('workshop') || is_tax()) {
         wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
         wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
     }
@@ -77,7 +77,7 @@ function add_nina_scripts()
     } else if (is_archive()) {
         wp_enqueue_script('nina_remodal_js', get_template_directory_uri() . '/assets/js/remodal.min.js');
         wp_enqueue_script('nina_isolate_js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
-    } else if (is_page('workshop') || is_page('privacy') || is_page('trade')) {
+    } else if (is_page('workshop') || is_page('privacy') || is_page('trade') || is_tax()) {
         wp_enqueue_script('nina_isolate_js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
     }
 }
