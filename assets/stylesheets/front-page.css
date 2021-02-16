@@ -267,9 +267,17 @@ section {
   color: #f00;
 }
 
+.new-info__list li {
+  text-decoration: none;
+}
+
 .new-info__list__items {
   color: #4169e1;
-  font-size: 1rem;
+  font-size: 4rem;
+}
+
+.item-jump-taxonomy:visited {
+  color: #4169e1;
 }
 
 .fa-hand-point-right {

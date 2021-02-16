@@ -3,13 +3,53 @@
 
 <main id="main">
 	<div class="contents__wrap">
+
 		<div class="main__new-info">
 			<p class="new-info__cap">!!New Item Arrival!!</p>
-			<ul class="new-info__list">
-				<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span>Earring014</li>
-				<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span>Ring012</li>
-			</ul>
+			<!-- 投稿一覧の表示 -->
+			<?php
+			$args = [
+				'post_type' => 'item', // カスタム投稿名が「item」の場合
+				'posts_per_page' => 2, // 表示させる数
+			];
+			$my_query = new WP_Query($args); ?>
+			<?php if ($my_query->have_posts()) : ?>
+				<?php while ($my_query->have_posts()) : ?>
+					<?php $my_query->the_post(); ?>
+
+					<ul class="new-info__list">
+						<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span><a class="item-jump-taxonomy" href="#<?php the_ID(); ?>"><?php the_title(); ?></a></li>
+					</ul>
+
+				<?php endwhile; ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+
+			<!-- 個別投稿を見るモーダル -->
+			<?php
+			$args = [
+				'post_type' => 'item',
+				// 'posts_per_page' => 5,
+			];
+			$my_query = new WP_Query($args); ?>
+			<?php if ($my_query->have_posts()) : ?>
+				<?php while ($my_query->have_posts()) : ?>
+					<?php $my_query->the_post(); ?>
+					<div class="remodal" data-remodal-id="<?php the_ID(); ?>">
+						<button data-remodal-action="close" class="remodal-close"></button>
+						<h1><?php the_title(); ?></h1>
+						<?php the_content(); ?>
+						<br>
+						<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+						<button data-remodal-action="confirm" class="remodal-confirm">アイテム一覧</button>
+					</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+
 		</div>
+
+
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
