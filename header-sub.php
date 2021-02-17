@@ -37,7 +37,7 @@
             <ul class="gnav__list">
                 <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME & About</a></li>
                 <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/workshop')); ?>">Workshop</a></li>
-                <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/archive')); ?>">Items</a></li>
+                <li class="gnav__list__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
             </ul>
         </nav>
         <div class="hamburger-icon">

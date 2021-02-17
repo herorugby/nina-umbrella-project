@@ -11,7 +11,7 @@
         <ul class="container breadcrumb__list">
             <li class="breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
             <li class="breadcrumb__item">>></li>
-            <li class="breadcrumb__item">Items</li>
+            <li class="breadcrumb__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
             <li class="breadcrumb__item">>></li>
             <li class="breadcrumb__item"><?php echo $item->name; ?></li>
         </ul>
@@ -21,20 +21,20 @@
                 <div class="item-container">
 
                     <!-- ターム一覧表示 -->
-                    <ul class="category-btn">
+                    <!-- <ul class="category-btn">
                         <?php
                         $catargs = array(
                             'taxonomy' => 'item_cate',
                         );
                         ?>
                         <?php $catlists = get_categories($catargs); ?>
-                        <!-- 『全て』のボタンを別で出力 -->
-                        <li><a href=" " class="all is-current">全て</a></li>
-                        <!-- 『各タクソノミー』一覧を出力 -->
-                        <?php foreach ($catlists as $category) : ?>
-                            <li><a href="" class="<?php echo $category->slug ?>"><?php echo $category->name ?></a></li>
-                        <?php endforeach; ?>
-                    </ul>
+                        『全て』のボタンを別で出力
+                    <li><a href=" " class="all is-current">全て</a></li>
+                    『各タクソノミー』一覧を出力
+                    <?php foreach ($catlists as $category) : ?>
+                        <li><a href="" class="<?php echo $category->slug ?>"><?php echo $category->name ?></a></li>
+                    <?php endforeach; ?>
+                    </ul> -->
 
                     <div class="all-items-container">
 

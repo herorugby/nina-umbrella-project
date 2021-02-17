@@ -267,13 +267,13 @@ section {
   color: #f00;
 }
 
-.new-info__list li {
-  text-decoration: none;
-}
-
 .new-info__list__items {
   color: #4169e1;
-  font-size: 4rem;
+  font-size: 1rem;
+}
+
+.item-jump-taxonomy {
+  text-decoration: none;
 }
 
 .item-jump-taxonomy:visited {

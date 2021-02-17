@@ -6,7 +6,7 @@
         <ul class="container breadcrumb__list">
             <li class="breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
             <li class="breadcrumb__item">>></li>
-            <li class="breadcrumb__item"><?php the_title(); ?></li>
+            <li class="breadcrumb__item">Items</li>
         </ul>
         <section id="items" class="main__items">
             <h2 class="sub__title">Items</h2>
