@@ -258,6 +258,11 @@ section {
   color: #f00;
 }
 
+.new-info__list {
+  width: 50%;
+  margin: 1% auto 0;
+}
+
 .new-info__list__items {
   color: #4169e1;
   font-size: 1rem;
@@ -273,6 +278,18 @@ section {
 
 .fa-hand-point-right {
   color: #000;
+}
+
+.new-info__all-items__link {
+  display: block;
+  width: 50%;
+  margin: 2% auto 0;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #ccc;
+  text-align: center;
 }
 
 /* about-nina */
@@ -308,12 +325,13 @@ section {
     margin: 2% auto;
   }
 
-  .new-info__list {
-    width: 75%;
-    margin: 0 auto;
+  .new-info__list,
+  .new-info__all-items__link {
+    width: 40%;
   }
 
-  .new-info__list__items {
+  .new-info__list__items,
+  .new-info__all-items__link {
     font-size: 1.125rem;
   }
 }
@@ -321,7 +339,13 @@ section {
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
-  .new-info__list__items {
+  .new-info__list,
+  .new-info__all-items__link {
+    width: 30%;
+  }
+
+  .new-info__list__items,
+  .new-info__all-items__link {
     font-size: 1.25rem;
   }
 

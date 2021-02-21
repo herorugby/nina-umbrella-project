@@ -81,7 +81,7 @@
 
                                 <!-- ここにループ処理 -->
                                 <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                    <h1><?php the_title(); ?></h1>
+                                    <p><?php the_title(); ?></p>
                                     <?php the_content(); ?>
                                     <br>
                                     <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>

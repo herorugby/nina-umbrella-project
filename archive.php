@@ -11,18 +11,19 @@
         <section id="items" class="main__items">
             <h2 class="sub__title">Items</h2>
 
-            <section class="all-items">
+            <div class="all-items">
+                <p class="category__title">カテゴリーを選択</p>
                 <div class="item-container">
 
                     <?php
                     $item_cate = get_terms(array('taxonomy' => 'item_cate'));
                     if (!empty($item_cate)) :
                     ?>
-                        <div>
+                        <div class="all-items__category">
                             <ul class="all-items__list">
                                 <?php foreach ($item_cate as $item) : ?>
                                     <li class="all-items__list__item">
-                                        <a href="<?php echo get_term_link($item); ?>">【<?php echo $item->name ?>】
+                                        <a href="<?php echo get_term_link($item); ?>">-<?php echo $item->name ?>-
                                         </a>
                                     </li>
                                 <?php endforeach; ?>
@@ -30,6 +31,7 @@
                         </div>
                     <?php endif; ?>
 
+                    <p class="post__title">アイテム一覧</p>
                     <div class="all-items-container">
 
                         <!-- 投稿一覧の表示 -->
@@ -65,7 +67,7 @@
                             <?php while ($my_query->have_posts()) : ?>
                                 <?php $my_query->the_post(); ?>
                                 <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                    <h1><?php the_title(); ?></h1>
+                                    <p><?php the_title(); ?></p>
                                     <?php the_content(); ?>
                                     <br>
                                     <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
@@ -93,7 +95,7 @@
 
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
     </div>
 </main>

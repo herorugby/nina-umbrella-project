@@ -36,16 +36,15 @@
 				<?php while ($my_query->have_posts()) : ?>
 					<?php $my_query->the_post(); ?>
 					<div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-						<h1><?php the_title(); ?></h1>
+						<p><?php the_title(); ?></p>
 						<?php the_content(); ?>
 						<br>
 						<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-						<!-- <button data-remodal-action="confirm" class="remodal-confirm"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></button> -->
-						<a data-remodal-action="confirm" class="remodal-confirm" href="<?php echo get_post_type_archive_link('item'); ?>">Items</a>
 					</div>
 				<?php endwhile; ?>
 			<?php endif; ?>
 			<?php wp_reset_postdata(); ?>
+			<a class="new-info__all-items__link" href="<?php echo get_post_type_archive_link('item'); ?>">more Items...</a>
 
 		</div>
 
