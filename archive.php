@@ -19,9 +19,12 @@
                     if (!empty($item_cate)) :
                     ?>
                         <div>
-                            <ul>
+                            <ul class="all-items__list">
                                 <?php foreach ($item_cate as $item) : ?>
-                                    <li><a href="<?php echo get_term_link($item); ?>"><?php echo $item->name ?></a></li>
+                                    <li class="all-items__list__item">
+                                        <a href="<?php echo get_term_link($item); ?>">【<?php echo $item->name ?>】
+                                        </a>
+                                    </li>
                                 <?php endforeach; ?>
                             </ul>
                         </div>
@@ -62,16 +65,31 @@
                             <?php while ($my_query->have_posts()) : ?>
                                 <?php $my_query->the_post(); ?>
                                 <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                    <button data-remodal-action="close" class="remodal-close"></button>
                                     <h1><?php the_title(); ?></h1>
                                     <?php the_content(); ?>
                                     <br>
                                     <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-                                    <button data-remodal-action="confirm" class="remodal-confirm">アイテム一覧</button>
                                 </div>
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
+
+                        <!-- テスト開始 -->
+                        <!-- <div class="all-items__details">
+                            <picture class="all-items__img">
+                                <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                                <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                                <img src="images/test2.jpg" alt="test写真2">
+                            </picture>
+                        </div> -->
+                        <!-- <div class="all-items__details">
+                            <picture class="all-items__img">
+                                <source media="(min-width: 960px)" srcset="images/test2.jpg">
+                                <source media="(min-width: 560px)" srcset="images/test2.jpg">
+                                <img src="images/test2.jpg" alt="test写真2">
+                            </picture>
+                        </div> -->
+                        <!-- テスト終了 -->
 
                     </div>
                 </div>

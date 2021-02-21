@@ -91,15 +91,6 @@ p,
   color: #4169e1;
 }
 
-/* #gnav {
-  transform: translateX(100vw);
-  transition: all 0.3s linear;
-}
-
-#gnav.is-active {
-  transform: translateX(0);
-} */
-
 #gnav {
   transform-origin: top left;
   transform: rotateZ(-90deg);

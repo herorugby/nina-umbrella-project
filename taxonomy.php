@@ -81,12 +81,10 @@
 
                                 <!-- ここにループ処理 -->
                                 <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                    <button data-remodal-action="close" class="remodal-close"></button>
                                     <h1><?php the_title(); ?></h1>
                                     <?php the_content(); ?>
                                     <br>
                                     <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-                                    <button data-remodal-action="confirm" class="remodal-confirm">アイテム一覧</button>
                                 </div>
 
                             <?php endwhile; ?>
