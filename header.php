@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/front-page.css"> -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/stylesheets/front-page.css">
 
     <!-- google fonts notoserifjp lora dancingscript -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,32 +24,27 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     <header id="header top">
-        <a class="top__link" href="<?php echo esc_url(home_url('/')); ?>">
-            <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/large-device-logo.png" alt="nina-umbrella-projectのロゴ">
+        <div class="top__link">
+            <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="nina-umbrella-projectのロゴ">
             <h1 class="top__title">nina</h1>
             <p class="top__title__catch">be with you</p>
-        </a>
+        </div>
 
         <div class="header__img-slide-show">
             <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img1.jpeg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img1.jpeg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img1.jpeg" alt="test写真1">
+                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop1.jpg">
+                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet1.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp1.jpg" alt="トップページのスライド画像">
             </picture>
             <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg" alt="test写真2">
+                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop2.jpg">
+                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet2.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp2.jpg" alt="トップページのスライド画像">
             </picture>
             <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img3.jpeg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img3.jpeg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img3.jpeg" alt="test写真3">
-            </picture>
-            <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test-main-img2.jpg" alt="test写真2">
+                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop3.jpg">
+                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet3.jpg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp3.jpg" alt="トップページのスライド画像">
             </picture>
         </div>
 

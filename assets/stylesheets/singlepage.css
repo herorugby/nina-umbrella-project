@@ -69,6 +69,10 @@
   color: #666;
 }
 
+.workshop__description_care {
+  padding: 0 2% 1%;
+}
+
 /* archives.php */
 .all-items__list {
   display: flex;
@@ -139,6 +143,11 @@
     margin: 2% auto;
   }
 
+  /* workshop.php */
+  .workshop__description_care {
+    padding: 0 2% 1%;
+  }
+
   /* archives.php */
   .all-items__list__item a {
     font-size: 1.125rem;
@@ -173,7 +182,7 @@
   }
 
   .details-container {
-    display: flex;
+    /* display: flex; */
     display: table;
   }
 
@@ -184,12 +193,18 @@
     vertical-align: middle;
   }
 
+  .workshop__img--mgtp,
+  .workshop__description--mgtp {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .card-design__description {
     padding-right: 0;
   }
 
-  .card-design__img img {
-    margin-left: 2%;
+  .workshop__description_care {
+    padding: 0 1% 0.5%;
   }
 
   /* archives.php */

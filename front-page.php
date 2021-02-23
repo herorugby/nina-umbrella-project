@@ -48,18 +48,16 @@
 
 		</div>
 
-
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
 				<div class="about-nina__details__contents card-design">
 					<h3 class="contents__title">nina umbrella project</h3>
 					<div class="details-container">
-						<picture class="about-nina__img card-design__img">
-							<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
-						</picture>
+						<div class="about-nina__imgset">
+							<img class="about-nina__logo_img" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="ninaプロジェクトのロゴ">
+						</div>
+
 						<p class="about-nina__description card-design__description">
 							プロゴルファーであり、「nina」のアクセサリーを制作する岡村&ensp;咲自身も患う指定難病、全身性エリテマトーデス(SLE/Lupus)の患者さんへ、遮光100%の晴れ雨兼用日傘を届けるプロジェクトです。<br>
 							SLE患者さんの抱える問題の１つとして日光過敏症に対して、少しでも快適に外出が出来るよう寄贈する傘は、「nina」で販売するアクセサリーの売り上げの一部を資金として使用致します。<br>
@@ -69,10 +67,10 @@
 				<div class="about-nina__details__contents card-design">
 					<h3 class="contents__title">遮光100%<br>UVカット100%<br>晴れ雨兼用日傘とは</h3>
 					<div class="details-container">
-						<picture class="about-nina__img card-design__img">
-							<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-							<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
+						<picture class="about-nina__umbrella_img card-design__img">
+							<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__umbrella_desktop.jpg">
+							<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__umbrella_tablet.jpg">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__umbrella_sp.jpg" alt="遮光100%日傘の写真">
 						</picture>
 						<p class="about-umbrella__description card-design__description">
 							遮光100%、UVカット100%の日傘と、一般的によく見られる遮光率99%やUVカット99%の日傘とは異なります。<br>
@@ -86,9 +84,9 @@
 				<div class="about-nina__details__contents card-design">
 					<h3 class="contents__title">プロゴルファー<br>岡村咲からのコメント</h3>
 					<picture class="about-comments__img card-design__img">
-						<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-						<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
+						<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_desktop.jpg">
+						<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_tablet.jpg">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_sp.jpg" alt="岡村咲からのコメント写真">
 					</picture>
 					<p class="about-comments__description card-design__description">
 						本業であるプロゴルファーの活動とは違った、ハンドメイドアクセサリーと言う分野でこのような取り組みをする事になるとは予想もできませんでした。
@@ -109,9 +107,9 @@
 			<h2 class="sub__title">About sle/lupus</h2>
 			<div class="about-sle__details card-design">
 				<picture class="about-sle__img card-design__img">
-					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-					<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
+					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_desktop.jpg">
+					<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_tablet.jpg">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_sp.jpg" alt="sleについての写真">
 				</picture>
 				<p class="about-sle__description card-design__description">
 					膠原病のひとつとして知られている国の指定難病、全身性エリテマトーデス(英名の頭文字を取ってSLE/英語で通称Lupus)の症状はきわめて多彩で、

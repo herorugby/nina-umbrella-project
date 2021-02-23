@@ -27,6 +27,7 @@
     </div>
     <a href="#top" class="page-up-icon"><i class="fas fa-angle-double-up"></i><br>UP</a>
 </footer>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/front-page.js"></script> -->
 
 <?php wp_footer(); ?>
 </body>

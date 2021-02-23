@@ -25,10 +25,8 @@ p,
 .top__link {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 37.5%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 50%;
   margin: 0 auto;
@@ -50,12 +48,11 @@ p,
 /* header__img-slide */
 .header__img-slide-show {
   width: 100%;
-  margin: 0 auto;
 }
 
 .header__img-slide-show picture img {
-  height: 80vh;
-  width: 100%;
+  height: 75vh;
+  border-radius: 0 0 5px 5px;
 }
 
 #gnav {
@@ -122,8 +119,16 @@ p,
 /* css 561px or more ~tablet.ver~ */
 /* Header */
 @media screen and (min-width: 560px) {
+  .top__link {
+    top: 40%;
+  }
+
   .top__title__catch {
     font-size: 1.25rem;
+  }
+
+  .header__img-slide-show picture img {
+    height: 80vh;
   }
 
   #gnav {
@@ -163,13 +168,27 @@ p,
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
+  .top__link {
+    top: 42.5%;
+  }
+
   .top__logo {
     width: 20%;
+  }
+
+  .header__img-slide-show picture img {
+    height: 87.5vh;
   }
 
   .top__title__catch {
     font-size: 1.375rem;
   }
+
+  /* .top__title__catch::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f103";
+    font-weight: 900;
+  } */
 
   #gnav {
     height: 6.5vh;
@@ -191,7 +210,7 @@ section {
 .contents__wrap {
   width: 95%;
   height: auto;
-  margin: 2% auto;
+  margin: 0 auto;
 }
 
 .sub__title {
@@ -225,7 +244,6 @@ section {
   border-bottom: 2px solid #000;
 }
 
-/* make card style */
 .card-design {
   width: 100%;
   margin: 2% auto 3%;
@@ -237,10 +255,9 @@ section {
 
 .card-design__img {
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   border-radius: 5px 5px 0 0;
 }
+
 .contents__title {
   padding: 2% 0 2% 3%;
   margin: 0 0 3% 2%;
@@ -288,11 +305,17 @@ section {
   color: #000;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 50px 6px #ccc;
+  box-shadow: 2px 3px 6px #ccc;
   text-align: center;
 }
 
 /* about-nina */
+.about-nina__logo_img {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 5px 5px 0 0;
+}
 
 /* about-sle */
 .about-sle__details {
@@ -322,7 +345,6 @@ section {
   /* contents common setting */
   .contents__wrap {
     width: 93%;
-    margin: 2% auto;
   }
 
   .new-info__list,
@@ -333,6 +355,11 @@ section {
   .new-info__list__items,
   .new-info__all-items__link {
     font-size: 1.125rem;
+  }
+
+  /* about-nina */
+  .about-nina__logo_img {
+    width: 35%;
   }
 }
 
@@ -359,8 +386,8 @@ section {
   }
 
   .details-container {
-    display: flex;
     display: table;
+    position: relative;
   }
 
   .card-design__img,
@@ -374,8 +401,23 @@ section {
     padding-right: 0;
   }
 
-  .card-design__img img {
-    margin-left: 2%;
+  /* about-nina */
+  .about-nina__imgset {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .about-nina__logo_img {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .about-nina__description {
+    width: 50%;
   }
 
   .about-comments__img,

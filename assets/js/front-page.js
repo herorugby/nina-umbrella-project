@@ -30,11 +30,12 @@ function fixedGnav() {
 jQuery(function() {
     jQuery('.header__img-slide-show').slick( {
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 3000,
         dots: false,
         arrows: false,
         infinite: true,
         fade: true,
+        speed: 1500,
         swipe: false,
         pauseOnHover: false,
         pauseOnFocus: false,

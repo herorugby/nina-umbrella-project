@@ -14,12 +14,12 @@
                 <div class="workshop__details__contents card-design">
                     <h3 class="contents__title">ninaで制作する<br>アクセサリーの素材について</h3>
                     <div class="details-container">
-                        <picture class="workshop__img card-design__img">
-                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
+                        <picture class="workshop__img--mgtp card-design__img">
+                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__material_img_desktop.JPG">
+                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__material_img_tablet.jpg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__material_img_sp.jpg" alt="アクセサリー制作風景">
                         </picture>
-                        <p class="workshop__description card-design__description">
+                        <p class="workshop__description--mgtp card-design__description">
                             nina で制作するアクセサリーに使用する素材は以下の通りです。<br>
                             ・14kgf / 14金ゴールドフィルド
                             (ピアスホール、キャッチ、全ての連結パーツ、
@@ -41,9 +41,9 @@
                     <h3 class="contents__title">「14kgf」とは</h3>
                     <div class="details-container">
                         <picture class="workshop__img card-design__img">
-                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
+                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__14kgf_img_desktop.jpg">
+                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__14kgf_img_tablet.jpg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/workshop__14kgf_img_sp.jpg" alt="素材紹介画像">
                         </picture>
                         <p class="workshop__description card-design__description">
                             手軽に本物の金の輝きを楽しめる、欧米ではポピュラーな素材です。<br>
@@ -57,12 +57,7 @@
                 <div class="workshop__details__contents card-design">
                     <h3 class="contents__title">「14kgf」のお手入れ方法</h3>
                     <div class="details-container">
-                        <picture class="workshop__img card-design__img">
-                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
-                        </picture>
-                        <p class="workshop__description card-design__description">
+                        <p class="workshop__description_care card-design__description">
                             14kgfは、ゴールドアクセサリーと同様、着用後に柔らかいコットンや布（メガネ用の布がおすすめ）で、包み込むように汗や皮脂を拭き取ることで美しく長く使用する事ができます。<br>
                             また、身に着けたままお風呂に入るのは、劣化を加速させる原因となることがあります。<br>
                             天然石や真珠が付いている場合は、破損防止のため優しくお手入れしてください。<br>
@@ -74,12 +69,7 @@
                 <div class="workshop__details__contents card-design">
                     <h3 class="contents__title">お取り扱いの注意点</h3>
                     <div class="details-container">
-                        <picture class="workshop__img card-design__img">
-                            <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/test1.jpg" alt="test写真1">
-                        </picture>
-                        <p class="workshop__description card-design__description">
+                        <p class="workshop__description_care card-design__description">
                             繊細な天然パーツや柔らかい14kgfのピアスポスト、連結パーツを使用しておりますので、お取り扱いには十分お気をつけ下さい。<br>
                             洋服の脱着には、ピアスを外した状態をお勧めします。
                         </p>
