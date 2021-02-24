@@ -1,6 +1,17 @@
 <?php
 
 /**
+ * body要素直後に何かを挿入する時 htmlタグではない！
+ *
+ * @return void
+ */
+function nina_wp_body_open()
+{
+    //挿入したいコードを記述
+}
+add_action('wp_body_open', 'nina_wp_body_open');
+
+/**
  * <title>タグを出力する
  */
 add_theme_support('title-tag');
@@ -10,6 +21,12 @@ add_theme_support('title-tag');
  */
 add_theme_support('post-thumbnails');
 
+/**
+ * タイトルタグの区切り文字を変更
+ *
+ * @param [type] $separator
+ * @return void
+ */
 function nina_document_title_separetor($separator)
 {
     $separator = '|';
@@ -17,6 +34,12 @@ function nina_document_title_separetor($separator)
 }
 add_filter('document_title_separator', 'nina_document_title_separetor');
 
+/**
+ * タイトルのカスタマイズ
+ *
+ * @param [type] $title
+ * @return void
+ */
 function nina_document_title_parts($title)
 {
     if (is_home()) {
