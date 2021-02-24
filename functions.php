@@ -85,3 +85,42 @@ function add_nina_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'add_nina_scripts');
+
+
+// add_action('init', function () {
+//     register_taxonomy(
+//         'post_tag',
+//         ['post', 'item'],
+//         [
+//             'hierarchical' => false,
+//             'query_var'    => 'tag',
+//         ]
+//     );
+// });
+// add_action('pre_get_posts', function ($query) {
+//     if (is_admin() && !$query->is_main_query()) {
+//         return;
+//     }
+//     if ($query->is_category() || $query->is_tag()) {
+//         $query->set('post_type', ['post', 'item']);
+//     }
+// });
+
+// function add_tag_post_column_title($columns)
+// {
+//     $columns['slug'] = "tags";
+//     return $columns;
+// }
+// function add_tag_post_column($column_name, $post_id)
+// {
+//     if ($column_name == 'slug') {
+//         $tags = get_the_tags();
+//         if ($tags) {
+//             foreach ($tags as $tag) {
+//                 echo $tag->name . ' ';
+//             }
+//         }
+//     }
+// }
+// add_filter('manage_item_posts_columns', 'add_tag_post_column_title');
+// add_action('manage_item_posts_custom_column', 'add_tag_post_column', 10, 2);
