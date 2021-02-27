@@ -3,6 +3,28 @@
 /* Main */
 /* css less than 559px ~mobile.ver~ */
 /* contents common setting */
+.fadeInLeft {
+  transform: translate(-30px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInLeft.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeInRight {
+  transform: translate(30px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInRight.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .contents__wrap {
   width: 95%;
   height: auto;
@@ -74,14 +96,17 @@
 }
 
 /* archives.php */
+/* .category__title {
+  font-size: 0.875rem;
+} */
 .all-items__list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .all-items__list__item {
-  width: 33.3333%;
-  margin-bottom: 2%;
+  width: 30%;
+  margin: 2% 1.5%;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 3px 6px #ccc;
@@ -94,33 +119,67 @@
   font-size: 1rem;
 }
 
+/* .all-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+} */
+
 .all-items__details {
   display: block;
-  margin-bottom: 2%;
+  width: 85%;
+  margin: 0 auto 2%;
+  padding: 1%;
   padding-top: 1%;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 3px 6px #ccc;
   text-decoration: none;
-  /* color: #000; */
-  color: #4169e1;
-  font-size: 1rem;
+  color: #000;
+  font-size: 0.875rem;
+  font-family: "Noto Serif JP", serif;
 }
 
 .all-items__details:visited {
-  color: #4169e1;
+  color: #000;
+}
+
+.new-mark {
+  color: #f00;
+  font-size: 0.9375rem;
 }
 
 .all-items__img {
-  width: 95%;
+  width: 200px;
   margin: 0 auto;
-  /* border-radius: 500px; */
+  padding-top: 1%;
 }
 
-/* .all-items__details picture img {
-  width: 95%;
-  border-radius: 5px;
-} */
+/* remodalウィンドウ内の設定 */
+.wp-block-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.remodal-pic {
+  width: 90%;
+  margin: 2% 0;
+}
+
+.remodal-textleft {
+  text-align: left;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+.remodal-field__list {
+  margin-top: 5%;
+}
+
+.remodal-field__list__item {
+  margin-top: 1%;
+  font-family: "Noto Serif JP", serif;
+}
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
@@ -149,6 +208,10 @@
   }
 
   /* archives.php */
+  .all-items__list__item {
+    margin: 1% 1.5%;
+  }
+
   .all-items__list__item a {
     font-size: 1.125rem;
   }
@@ -160,12 +223,32 @@
   }
 
   .all-items__details {
-    width: 50%;
-    font-size: 1.125rem;
+    width: 45%;
+    margin: 1% auto;
+    padding: 0.5% 0;
+    font-size: 0.9375rem;
   }
 
-  .all-items__details picture img {
+  .new-mark {
+    font-size: 1rem;
+  }
+
+  /* .all-items__details picture img {
     width: 90%;
+  } */
+
+  /* remodalウィンドウ内の設定 */
+  .wp-block-image {
+    width: 30%;
+  }
+
+  .remodal-pic {
+    width: 70%;
+  }
+
+  .remodal-textleft {
+    margin-bottom: 5%;
+    font-size: 1.125rem;
   }
 }
 
@@ -208,13 +291,36 @@
   }
 
   /* archives.php */
+  .all-items__list__item {
+    margin: 0.5% 1.65%;
+  }
+
   .all-items__list__item a {
     font-size: 1.25rem;
   }
 
   .all-items__details {
-    padding-top: 0.5%;
-    width: 33.3333%;
+    width: 22.5%;
+    margin: 0.5% 1.25%;
+    padding: 0.5% 0 0;
+    font-size: 1rem;
+  }
+
+  .new-mark {
+    font-size: 1.0625rem;
+  }
+
+  /* remodalウィンドウ内の設定 */
+  /* .wp-block-image {
+    width: 30%;
+  } */
+
+  .remodal-pic {
+    width: 80%;
+    margin: 1% 0;
+  }
+
+  .remodal-textleft {
     font-size: 1.25rem;
   }
 }

@@ -48,6 +48,34 @@ jQuery(function () {
     });
 });
 
+//text fadeInLeft
+jQuery(window).on("load scroll", function (){
+  let box = jQuery(".fadeInLeft");
+
+  box.each(function(){
+    let boxOffset = jQuery(this).offset().top;
+    let scrollPos = jQuery(window).scrollTop();
+    let wh = jQuery(window).height();
+    if(scrollPos > boxOffset - wh + 250){
+      jQuery(this).addClass("animated");
+    }
+  });
+});
+
+//text fadeInRight
+jQuery(window).on("load scroll", function (){
+  let box = jQuery(".fadeInRight");
+
+  box.each(function(){
+    let boxOffset = jQuery(this).offset().top;
+    let scrollPos = jQuery(window).scrollTop();
+    let wh = jQuery(window).height();
+    if(scrollPos > boxOffset - wh + 250){
+      jQuery(this).addClass("animated");
+    }
+  });
+});
+
 
 // copy right get full year
 jQuery(function() {

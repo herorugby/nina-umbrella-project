@@ -4,54 +4,42 @@
 <main id="main">
 	<div class="contents__wrap">
 
-		<div class="main__new-info">
-			<p class="new-info__cap">!!New Item Arrival!!</p>
-			<!-- 投稿一覧の表示 -->
-			<?php
-			$args = [
-				'post_type' => 'item', // カスタム投稿名が「item」の場合
-				'posts_per_page' => 2, // 表示させる数
-			];
-			$my_query = new WP_Query($args); ?>
-			<?php if ($my_query->have_posts()) : ?>
-				<?php while ($my_query->have_posts()) : ?>
-					<?php $my_query->the_post(); ?>
+		<?php
+		$args = [
+			'post_type' => 'item', // カスタム投稿名が「item」の場合
+			'posts_per_page' => 1, // 表示させる数
+		];
+		$my_query = new WP_Query($args);
+		?>
+		<?php if ($my_query->have_posts()) : ?>
+			<?php while ($my_query->have_posts()) : ?>
+				<?php $my_query->the_post(); ?>
 
-					<ul class="new-info__list">
-						<li class="new-info__list__items"><span class="right-hand-icon"><i class="far fa-hand-point-right"></i>&ensp;</span><a class="item-jump-taxonomy" href="#<?php the_ID(); ?>"><?php the_title(); ?></a></li>
-					</ul>
+				<?php
+				$leavedays = 1;  // NEWマークを表示する日数
+				$now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
+				$entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
+				$progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
+				?>
+				<?php
+				if ($leavedays > $progress) {
+					echo '<p class="new-info__cap">!!New Item Arrival!!</p>';
+				?>
+					<a class="new-info__all-items__link" href="<?php echo get_post_type_archive_link('item'); ?>">check Items...</a>
+				<?php
+				}
+				?>
 
-				<?php endwhile; ?>
-			<?php endif; ?>
-			<?php wp_reset_postdata(); ?>
+			<?php endwhile; ?>
+		<?php endif; ?>
+		<?php wp_reset_postdata(); ?>
 
-			<!-- 個別投稿を見るモーダル -->
-			<?php
-			$args = [
-				'post_type' => 'item',
-				// 'posts_per_page' => 5,
-			];
-			$my_query = new WP_Query($args); ?>
-			<?php if ($my_query->have_posts()) : ?>
-				<?php while ($my_query->have_posts()) : ?>
-					<?php $my_query->the_post(); ?>
-					<div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-						<p><?php the_title(); ?></p>
-						<?php the_content(); ?>
-						<br>
-						<button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-					</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
-			<?php wp_reset_postdata(); ?>
-			<a class="new-info__all-items__link" href="<?php echo get_post_type_archive_link('item'); ?>">more Items...</a>
 
-		</div>
 
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
-				<div class="about-nina__details__contents card-design">
+				<div class="about-nina__details__contents card-design fadeInLeft">
 					<h3 class="contents__title">nina umbrella project</h3>
 					<div class="details-container">
 						<div class="about-nina__imgset">
@@ -64,7 +52,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="about-nina__details__contents card-design">
+				<div class="about-nina__details__contents card-design fadeInRight">
 					<h3 class="contents__title">遮光100%<br>UVカット100%<br>晴れ雨兼用日傘とは</h3>
 					<div class="details-container">
 						<picture class="about-nina__umbrella_img card-design__img">
@@ -81,7 +69,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="about-nina__details__contents card-design">
+				<div class="about-nina__details__contents card-design fadeInLeft">
 					<h3 class="contents__title">プロゴルファー<br>岡村咲からのコメント</h3>
 					<picture class="about-comments__img card-design__img">
 						<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_desktop.jpg">
@@ -104,8 +92,8 @@
 		</section>
 
 		<section id="about-sle" class="main__about">
-			<h2 class="sub__title">About sle/lupus</h2>
-			<div class="about-sle__details card-design">
+			<h2 class="sub__title fadeInRight">About sle/lupus</h2>
+			<div class="about-sle__details card-design fadeInLeft">
 				<picture class="about-sle__img card-design__img">
 					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_desktop.jpg">
 					<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_tablet.jpg">

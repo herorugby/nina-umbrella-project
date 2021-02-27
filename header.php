@@ -9,9 +9,7 @@
 
     <!-- google fonts notoserifjp lora dancingscript -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@600&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@600&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora:wght@600&family=Noto+Serif+JP:wght@600&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 
     <!-- read fontsawesome -->
     <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>

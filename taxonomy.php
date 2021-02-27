@@ -21,25 +21,10 @@
                 <div class="item-container">
 
                     <!-- ターム一覧表示 -->
-                    <!-- <ul class="category-btn">
-                        <?php
-                        $catargs = array(
-                            'taxonomy' => 'item_cate',
-                        );
-                        ?>
-                        <?php $catlists = get_categories($catargs); ?>
-                        『全て』のボタンを別で出力
-                    <li><a href=" " class="all is-current">全て</a></li>
-                    『各タクソノミー』一覧を出力
-                    <?php foreach ($catlists as $category) : ?>
-                        <li><a href="" class="<?php echo $category->slug ?>"><?php echo $category->name ?></a></li>
-                    <?php endforeach; ?>
-                    </ul> -->
-
                     <div class="all-items-container">
 
                         <!-- 投稿一覧の表示 -->
-                        <?php $item_cate_term = wp_get_object_terms($post->ID, 'item_cate'); ?>
+                        <!-- <?php $item_cate_term = wp_get_object_terms($post->ID, 'item_cate'); ?> -->
                         <?php
                         $args = array(
                             'post_type' => 'item',
@@ -54,8 +39,20 @@
                                 <?php $custom_query->the_post(); ?>
 
                                 <!-- ここにループ処理 -->
+                                <?php
+                                $leavedays = 3;  // NEWマークを表示する日数
+                                $now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
+                                $entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
+                                $progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
+                                ?>
+
                                 <a href="#<?php the_ID(); ?>" class="all-items__details">
-                                    <?php the_title(); ?>
+                                    <?php
+                                    if ($leavedays > $progress) {
+                                        echo '<span class="new-mark">NEW</span>';
+                                    }
+                                    ?>
+                                    【<?php the_title(); ?>】
                                     <div class="all-items__img">
                                         <?php the_post_thumbnail('thumbnail'); ?>
                                     </div>
@@ -81,12 +78,31 @@
 
                                 <!-- ここにループ処理 -->
                                 <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                    <p><?php the_title(); ?></p>
-                                    <?php the_content(); ?>
-                                    <br>
+                                    <p>【<?php the_title(); ?>】</p>
+                                    <?php
+                                    $pic = get_field('pic');
+                                    $pic_url = $pic['url'];
+                                    ?>
+                                    <img class="remodal-pic" src="<?php echo $pic_url; ?>" alt="">
+                                    <div class="remodal-textleft">
+                                        <?php the_content(); ?>
+                                        <ul class="remodal-field__list">
+                                            <li class="remodal-field__list__item">
+                                                <b>価格：</b>
+                                                <span><?php echo number_format(get_field('price')); ?>円</span>
+                                            </li>
+                                            <li class="remodal-field__list__item">
+                                                <b>サイズ：</b>
+                                                <span><?php the_field('size'); ?></span>
+                                            </li>
+                                            <li class="remodal-field__list__item">
+                                                <b>素材：</b>
+                                                <span><?php the_field('material'); ?></span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
                                 </div>
-
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>

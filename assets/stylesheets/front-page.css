@@ -207,6 +207,28 @@ section {
 }
 
 /* contents common setting */
+.fadeInLeft {
+  transform: translate(-30px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInLeft.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeInRight {
+  transform: translate(30px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInRight.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .contents__wrap {
   width: 95%;
   height: auto;
@@ -276,7 +298,7 @@ section {
 }
 
 .new-info__list {
-  width: 50%;
+  width: 80%;
   margin: 1% auto 0;
 }
 
@@ -287,10 +309,14 @@ section {
 
 .item-jump-taxonomy {
   text-decoration: none;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-family: "Noto Serif JP", serif;
+  font-size: 0.9rem;
 }
 
 .item-jump-taxonomy:visited {
-  color: #4169e1;
+  color: #000;
 }
 
 .fa-hand-point-right {
@@ -307,6 +333,32 @@ section {
   background-color: #fff;
   box-shadow: 2px 3px 6px #ccc;
   text-align: center;
+}
+
+/* remodalウィンドウ内の設定 */
+.wp-block-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.remodal-pic {
+  width: 90%;
+  margin: 2% 0;
+}
+
+.remodal-textleft {
+  text-align: left;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+.remodal-field__list {
+  margin-top: 5%;
+}
+
+.remodal-field__list__item {
+  margin-top: 1%;
+  font-family: "Noto Serif JP", serif;
 }
 
 /* about-nina */
@@ -357,6 +409,20 @@ section {
     font-size: 1.125rem;
   }
 
+  /* remodalウィンドウ内の設定 */
+  .wp-block-image {
+    width: 30%;
+  }
+
+  .remodal-pic {
+    width: 70%;
+  }
+
+  .remodal-textleft {
+    margin-bottom: 5%;
+    font-size: 1.125rem;
+  }
+
   /* about-nina */
   .about-nina__logo_img {
     width: 35%;
@@ -399,6 +465,20 @@ section {
 
   .card-design__description {
     padding-right: 0;
+  }
+
+  /* remodalウィンドウ内の設定 */
+  .wp-block-image {
+    width: 30%;
+  }
+
+  .remodal-pic {
+    width: 80%;
+    margin: 1% 0;
+  }
+
+  .remodal-textleft {
+    font-size: 1.25rem;
   }
 
   /* about-nina */
