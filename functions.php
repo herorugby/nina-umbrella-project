@@ -44,7 +44,7 @@ function nina_document_title_parts($title)
 {
     if (is_home()) {
         unset($title['tagline']);
-        $title['title'] = "Always sparkle with 'nina'";
+        $title['title'] = "あなたの輝く人生をninaと共に";
     }
     return $title;
 }
@@ -69,7 +69,7 @@ function add_nina_styles()
         // slick css cdn
         wp_enqueue_style('slick_carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css');
         wp_enqueue_style('slick_carousel_theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css');
-        // wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
+        wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
     }
 
     if (is_archive() || is_page('workshop') || is_tax()) {
@@ -108,42 +108,3 @@ function add_nina_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'add_nina_scripts');
-
-
-// add_action('init', function () {
-//     register_taxonomy(
-//         'post_tag',
-//         ['post', 'item'],
-//         [
-//             'hierarchical' => false,
-//             'query_var'    => 'tag',
-//         ]
-//     );
-// });
-// add_action('pre_get_posts', function ($query) {
-//     if (is_admin() && !$query->is_main_query()) {
-//         return;
-//     }
-//     if ($query->is_category() || $query->is_tag()) {
-//         $query->set('post_type', ['post', 'item']);
-//     }
-// });
-
-// function add_tag_post_column_title($columns)
-// {
-//     $columns['slug'] = "tags";
-//     return $columns;
-// }
-// function add_tag_post_column($column_name, $post_id)
-// {
-//     if ($column_name == 'slug') {
-//         $tags = get_the_tags();
-//         if ($tags) {
-//             foreach ($tags as $tag) {
-//                 echo $tag->name . ' ';
-//             }
-//         }
-//     }
-// }
-// add_filter('manage_item_posts_columns', 'add_tag_post_column_title');
-// add_action('manage_item_posts_custom_column', 'add_tag_post_column', 10, 2);

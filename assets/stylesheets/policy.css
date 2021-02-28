@@ -2,26 +2,67 @@
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
+
+/* font size setting */
+h2 {
+  font-size: 1.1875rem;
+}
+
+h3 {
+  font-size: 1.0625rem;
+}
+
+/* each block setting */
 .sec-block {
-  margin-top: 9%;
+  margin-top: 5%;
 }
 
 .description {
-  margin-top: 1.5%;
+  font-size: 0.9375rem;
+  margin-top: 1%;
 }
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
+  /* font size setting */
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  /* each block setting */
   .sec-block {
-    margin-top: 3%;
+    margin-top: 2%;
+  }
+
+  .description {
+    font-size: 1rem;
   }
 }
 
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
+  /* font size setting */
+  h2 {
+    font-size: 1.3125rem;
+  }
+
+  h3 {
+    font-size: 1.1875rem;
+  }
+
+  /* each block setting */
   .sec-block {
-    margin-top: 2%;
+    margin-top: 1%;
+  }
+
+  .description {
+    font-size: 1.0625rem;
+    margin-top: 0.5%;
   }
 }

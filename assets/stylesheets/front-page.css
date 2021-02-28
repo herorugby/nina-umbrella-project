@@ -4,7 +4,7 @@ h1,
 h2,
 li,
 a,
-.top__link a {
+.top__logo-place a {
   font-family: "Lora", serif;
 }
 
@@ -15,6 +15,7 @@ p,
   font-family: "Noto Serif JP", serif;
 }
 
+/* top title setting */
 .top__title__catch {
   font-family: "Dancing Script", cursive;
   font-size: 1.125rem;
@@ -22,7 +23,7 @@ p,
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
-.top__link {
+.top__logo-place {
   display: block;
   position: absolute;
   top: 37.5%;
@@ -55,6 +56,68 @@ p,
   border-radius: 0 0 5px 5px;
 }
 
+/* scroll guide */
+#mouse,
+#mouse:before {
+  position: absolute;
+  left: 50%;
+}
+
+#mouse {
+  top: 70%;
+  width: 25px;
+  height: 45px;
+  margin-left: -15px;
+  margin-top: -33px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+
+#mouse:before {
+  content: "";
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  border-radius: 4px;
+  animation: scroll 2.5s infinite;
+  -webkit-animation: scroll 2.5s infinite;
+  -moz-animation: scroll 2.5s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+}
+
+@-moz-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+}
+
+/* gnav setting */
 #gnav {
   position: fixed;
   top: 0;
@@ -98,6 +161,7 @@ p,
   transform: rotateZ(0deg);
 }
 
+/* hamburger icon setting */
 .hamburger-icon {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -119,7 +183,7 @@ p,
 /* css 561px or more ~tablet.ver~ */
 /* Header */
 @media screen and (min-width: 560px) {
-  .top__link {
+  .top__logo-place {
     top: 40%;
   }
 
@@ -127,10 +191,50 @@ p,
     font-size: 1.25rem;
   }
 
+  /* header__img-slide */
   .header__img-slide-show picture img {
     height: 80vh;
   }
 
+  /* scroll guide */
+  #mouse {
+    top: 73%;
+    width: 35px;
+    height: 65px;
+    margin-left: -20px;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(32.5px);
+    }
+  }
+
+  @-webkit-keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(32.5px);
+    }
+  }
+
+  @-moz-keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(32.5px);
+    }
+  }
+
+  /* gnav setting */
   #gnav {
     transform: none;
     width: 100%;
@@ -159,6 +263,7 @@ p,
     font-size: 1.125rem;
   }
 
+  /* hamburger icon */
   .hamburger-icon,
   #hamburger-btn {
     display: none;
@@ -168,28 +273,62 @@ p,
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
-  .top__link {
-    top: 42.5%;
+  .top__logo-place {
+    top: 50%;
   }
 
   .top__logo {
     width: 20%;
   }
 
-  .header__img-slide-show picture img {
-    height: 87.5vh;
-  }
-
   .top__title__catch {
     font-size: 1.375rem;
   }
 
-  /* .top__title__catch::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f103";
-    font-weight: 900;
-  } */
+  /* header__img-slide */
+  .header__img-slide-show picture img {
+    height: 100vh;
+  }
 
+  /* scroll guide */
+  #mouse {
+    top: 95%;
+    width: 35px;
+    height: 65px;
+    margin-left: -17.5px;
+  }
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  @-webkit-keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  @-moz-keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  /* gnav setting */
   #gnav {
     height: 6.5vh;
   }

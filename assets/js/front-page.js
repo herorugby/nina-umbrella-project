@@ -8,11 +8,11 @@ jQuery(function () {
     });
 });
 
-// for tablet & desktop fixed
+
+// for tablet & desktop gnav fixed
 jQuery(window).scroll(function() {
     fixedGnav();
 });
-
 function fixedGnav() {
     var fixed = jQuery("#gnav");
     var startPos = jQuery('#about-nina');
@@ -75,6 +75,7 @@ jQuery(function () {
         return false;
     });
 });
+
 
 //text fadeIn
 jQuery(window).on("load scroll", function (){

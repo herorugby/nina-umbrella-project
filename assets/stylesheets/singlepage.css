@@ -125,6 +125,7 @@
   box-shadow: 0 3px 6px #ccc;
   text-decoration: none;
   color: #000;
+  background-color: #fefefe;
   font-size: 0.875rem;
   font-family: "Noto Serif JP", serif;
 }
@@ -145,10 +146,10 @@
 }
 
 /* remodalウィンドウ内の設定 */
-.wp-block-image {
+/* .wp-block-image {
   width: 50%;
   margin: 0 auto;
-}
+} */
 
 .remodal-pic {
   width: 90%;
@@ -227,9 +228,9 @@
   } */
 
   /* remodalウィンドウ内の設定 */
-  .wp-block-image {
+  /* .wp-block-image {
     width: 30%;
-  }
+  } */
 
   .remodal-pic {
     width: 70%;

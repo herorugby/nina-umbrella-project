@@ -8,11 +8,11 @@ jQuery(function () {
     });
 });
 
-// for tablet & desktop fixed
+
+// for tablet & desktop gnav fixed
 jQuery(window).scroll(function() {
     fixedGnavSinglePage();
 });
-
 function fixedGnavSinglePage() {
     var fixed = jQuery("#gnav");
     var startPos = jQuery('.breadcrumb__list');
@@ -24,6 +24,7 @@ function fixedGnavSinglePage() {
       fixed.removeClass('is-fixed');
     }
 }
+
 
 // page top btn fadein and fadeout function
 jQuery(function () {
@@ -47,6 +48,7 @@ jQuery(function () {
         return false;
     });
 });
+
 
 //text fadeIn
 jQuery(window).on("load scroll", function (){

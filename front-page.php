@@ -16,7 +16,7 @@
 				<?php $my_query->the_post(); ?>
 
 				<?php
-				$leavedays = 1;  // NEWマークを表示する日数
+				$leavedays = 3;  // NEWマークを表示する日数
 				$now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
 				$entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
 				$progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -34,12 +34,10 @@
 		<?php endif; ?>
 		<?php wp_reset_postdata(); ?>
 
-
-
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
-				<div class="about-nina__details__contents card-design fadeIn">
+				<section class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">nina umbrella project</h3>
 					<div class="details-container">
 						<div class="about-nina__imgset">
@@ -51,8 +49,8 @@
 							SLE患者さんの抱える問題の１つとして日光過敏症に対して、少しでも快適に外出が出来るよう寄贈する傘は、「nina」で販売するアクセサリーの売り上げの一部を資金として使用致します。<br>
 						</p>
 					</div>
-				</div>
-				<div class="about-nina__details__contents card-design fadeIn">
+				</section>
+				<section class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">遮光100%<br>UVカット100%<br>晴れ雨兼用日傘とは</h3>
 					<div class="details-container">
 						<picture class="about-nina__umbrella_img card-design__img">
@@ -68,8 +66,8 @@
 							※この製品をプライベートで実際に使用している岡村の感想と、製品の説明を一部抜粋して書かせて頂いております。<br>
 						</p>
 					</div>
-				</div>
-				<div class="about-nina__details__contents card-design fadeIn">
+				</section>
+				<section class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">プロゴルファー<br>岡村咲からのコメント</h3>
 					<picture class="about-comments__img card-design__img">
 						<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_desktop.jpg">
@@ -87,7 +85,7 @@
 						私たちは助けが必要なのではありません。知ってもらえれば、それだけで充分に、大きな助けになります。理解を得られるだけで、病気を個性として生きられると、私は思っています。<br>
 						全身性エリテマトーデス(SLE/Lupus)の方へ日傘を届けるプロジェクトにご賛同いただいた方が、このプロジェクトに参加したと言う思い出とともに、nina のアクセサリーを長く愛用して頂けるよう、制作に全力を尽くしますので、サポートの程よろしくお願い致します！
 					</p>
-				</div>
+				</section>
 			</div>
 		</section>
 

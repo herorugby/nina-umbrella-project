@@ -8,10 +8,12 @@
             <li class="breadcrumb__item">>></li>
             <li class="breadcrumb__item"><?php the_title(); ?></li>
         </ul>
+
         <section id="workshop" class="main__workshop">
             <h2 class="sub__title">Workshop</h2>
             <div class="workshop__details">
-                <div class="workshop__details__contents card-design fadeIn">
+
+                <section class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">ninaで制作する<br>アクセサリーの素材について</h3>
                     <div class="details-container">
                         <picture class="workshop__img--mgtp card-design__img">
@@ -36,8 +38,9 @@
                             ※アクセサリーをご購入の際は、各商品の商品説明を必ずお読みください。
                         </p>
                     </div>
-                </div>
-                <div class="workshop__details__contents card-design fadeIn">
+                </section>
+
+                <section class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">「14kgf」とは</h3>
                     <div class="details-container">
                         <picture class="workshop__img card-design__img">
@@ -53,8 +56,9 @@
                             (一般的な金メッキは薄く"コーティング"されているのに比べ、ゴールドフィルドは、厚い金のプレートを"圧着"しており、厚みが約100倍あります。)
                         </p>
                     </div>
-                </div>
-                <div class="workshop__details__contents card-design fadeIn">
+                </section>
+
+                <section class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">「14kgf」のお手入れ方法</h3>
                     <div class="details-container">
                         <p class="workshop__description_care card-design__description">
@@ -65,8 +69,9 @@
                             その場合は市販のジュエリークリーナーの使用をお勧めします。
                         </p>
                     </div>
-                </div>
-                <div class="workshop__details__contents card-design fadeIn">
+                </section>
+
+                <section class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">お取り扱いの注意点</h3>
                     <div class="details-container">
                         <p class="workshop__description_care card-design__description">
@@ -74,7 +79,8 @@
                             洋服の脱着には、ピアスを外した状態をお勧めします。
                         </p>
                     </div>
-                </div>
+                </section>
+
             </div>
         </section>
     </div>

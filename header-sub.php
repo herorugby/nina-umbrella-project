@@ -22,19 +22,17 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header id="header top">
+
+    <header id="header">
+
         <div class="header-wrap">
             <h1 class="top__title">
-                <a class="top__link" href="<?php echo esc_url(home_url('/')); ?>">
+                <a class="top__logo-place" href="<?php echo esc_url(home_url('/')); ?>">
                     <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/sub_logo.png" alt="nina-umbrella-projectのロゴ">
                 </a>
             </h1>
-            <!-- <ul class="container breadcrumb__list">
-                <li class="breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
-                <li class="breadcrumb__item">>></li>
-                <li class="breadcrumb__item"><?php the_title(); ?></li>
-            </ul> -->
         </div>
+
         <nav id="gnav" class="container gnav__container">
             <ul class="gnav__list">
                 <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME & About</a></li>
@@ -42,7 +40,9 @@
                 <li class="gnav__list__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
             </ul>
         </nav>
+
         <div class="hamburger-icon">
             <i id="hamburger-btn" class="fas fa-list-ul"></i>
         </div>
+
     </header>
