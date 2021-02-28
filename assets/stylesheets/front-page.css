@@ -207,24 +207,13 @@ section {
 }
 
 /* contents common setting */
-.fadeInLeft {
-  transform: translate(-30px, 0);
-  transition: 2s;
+.fadeIn {
+  transform: translate(0, -30px);
+  transition: 3s;
   opacity: 0;
 }
 
-.fadeInLeft.animated {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-.fadeInRight {
-  transform: translate(30px, 0);
-  transition: 2s;
-  opacity: 0;
-}
-
-.fadeInRight.animated {
+.fadeIn.animated {
   transform: translate(0, 0);
   opacity: 1;
 }

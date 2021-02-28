@@ -23,7 +23,7 @@
 				?>
 				<?php
 				if ($leavedays > $progress) {
-					echo '<p class="new-info__cap">!!New Item Arrival!!</p>';
+					echo '<p class="new-info__cap">New Item Arrival</p>';
 				?>
 					<a class="new-info__all-items__link" href="<?php echo get_post_type_archive_link('item'); ?>">check Items...</a>
 				<?php
@@ -39,7 +39,7 @@
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 			<div class="about-nina__details">
-				<div class="about-nina__details__contents card-design fadeInLeft">
+				<div class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">nina umbrella project</h3>
 					<div class="details-container">
 						<div class="about-nina__imgset">
@@ -52,7 +52,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="about-nina__details__contents card-design fadeInRight">
+				<div class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">遮光100%<br>UVカット100%<br>晴れ雨兼用日傘とは</h3>
 					<div class="details-container">
 						<picture class="about-nina__umbrella_img card-design__img">
@@ -69,7 +69,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="about-nina__details__contents card-design fadeInLeft">
+				<div class="about-nina__details__contents card-design fadeIn">
 					<h3 class="contents__title">プロゴルファー<br>岡村咲からのコメント</h3>
 					<picture class="about-comments__img card-design__img">
 						<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__saki-coments_desktop.jpg">
@@ -91,9 +91,9 @@
 			</div>
 		</section>
 
-		<section id="about-sle" class="main__about">
-			<h2 class="sub__title fadeInRight">About sle/lupus</h2>
-			<div class="about-sle__details card-design fadeInLeft">
+		<section id="about-sle" class="main__about fadeIn">
+			<h2 class="sub__title">About sle/lupus</h2>
+			<div class="about-sle__details card-design">
 				<picture class="about-sle__img card-design__img">
 					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_desktop.jpg">
 					<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_tablet.jpg">

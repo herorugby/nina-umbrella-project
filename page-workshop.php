@@ -11,7 +11,7 @@
         <section id="workshop" class="main__workshop">
             <h2 class="sub__title">Workshop</h2>
             <div class="workshop__details">
-                <div class="workshop__details__contents card-design fadeInLeft">
+                <div class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">ninaで制作する<br>アクセサリーの素材について</h3>
                     <div class="details-container">
                         <picture class="workshop__img--mgtp card-design__img">
@@ -37,7 +37,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="workshop__details__contents card-design fadeInRight">
+                <div class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">「14kgf」とは</h3>
                     <div class="details-container">
                         <picture class="workshop__img card-design__img">
@@ -54,7 +54,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="workshop__details__contents card-design fadeInLeft">
+                <div class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">「14kgf」のお手入れ方法</h3>
                     <div class="details-container">
                         <p class="workshop__description_care card-design__description">
@@ -66,7 +66,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="workshop__details__contents card-design fadeInRight">
+                <div class="workshop__details__contents card-design fadeIn">
                     <h3 class="contents__title">お取り扱いの注意点</h3>
                     <div class="details-container">
                         <p class="workshop__description_care card-design__description">

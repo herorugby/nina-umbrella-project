@@ -26,7 +26,7 @@ function fixedGnav() {
 }
 
 
-// slide show with slick
+// slide show slick
 jQuery(function() {
     jQuery('.header__img-slide-show').slick( {
         autoplay: true,
@@ -40,6 +40,16 @@ jQuery(function() {
         pauseOnHover: false,
         pauseOnFocus: false,
     });
+});
+
+
+//popup text
+jQuery(function () {
+  setInterval(() => {
+    jQuery('.new-info__cap').fadeOut('slow', function () {
+      jQuery(this).fadeIn('slow');
+    });
+  }, 3000);
 });
 
 
@@ -66,9 +76,9 @@ jQuery(function () {
     });
 });
 
-//text fadeInLeft
+//text fadeIn
 jQuery(window).on("load scroll", function (){
-  let box = jQuery(".fadeInLeft");
+  let box = jQuery(".fadeIn");
 
   box.each(function(){
     let boxOffset = jQuery(this).offset().top;
@@ -80,19 +90,6 @@ jQuery(window).on("load scroll", function (){
   });
 });
 
-//text fadeInRight
-jQuery(window).on("load scroll", function (){
-  let box = jQuery(".fadeInRight");
-
-  box.each(function(){
-    let boxOffset = jQuery(this).offset().top;
-    let scrollPos = jQuery(window).scrollTop();
-    let wh = jQuery(window).height();
-    if(scrollPos > boxOffset - wh + 250){
-      jQuery(this).addClass("animated");
-    }
-  });
-});
 
 // copy right get full year
 jQuery(function() {

@@ -48,23 +48,9 @@ jQuery(function () {
     });
 });
 
-//text fadeInLeft
+//text fadeIn
 jQuery(window).on("load scroll", function (){
-  let box = jQuery(".fadeInLeft");
-
-  box.each(function(){
-    let boxOffset = jQuery(this).offset().top;
-    let scrollPos = jQuery(window).scrollTop();
-    let wh = jQuery(window).height();
-    if(scrollPos > boxOffset - wh + 250){
-      jQuery(this).addClass("animated");
-    }
-  });
-});
-
-//text fadeInRight
-jQuery(window).on("load scroll", function (){
-  let box = jQuery(".fadeInRight");
+  let box = jQuery(".fadeIn");
 
   box.each(function(){
     let boxOffset = jQuery(this).offset().top;
