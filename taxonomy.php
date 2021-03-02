@@ -25,6 +25,25 @@
                 <!-- ターム一覧表示 -->
                 <div class="all-items-container">
 
+                    <!-- 投稿カテゴリー一覧 -->
+                    <!-- <?php
+                            $item_cate = get_terms(
+                                array(
+                                    'taxonomy' => 'item_cate'
+                                )
+                            );
+                            if (!empty($item_cate)) :
+                            ?>
+                            <ul class="all-items__list">
+                                <?php foreach ($item_cate as $item) : ?>
+                                    <li class="all-items__list__item">
+                                        <a href="<?php echo get_term_link($item); ?>">-<?php echo $item->name ?>-
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?> -->
+
                     <!-- 投稿一覧の表示 -->
                     <!-- <?php $item_cate_term = wp_get_object_terms($post->ID, 'item_cate'); ?> -->
                     <?php
@@ -78,9 +97,21 @@
                         <?php while ($custom_query->have_posts()) : ?>
                             <?php $custom_query->the_post(); ?>
 
+                            <?php
+                            $leavedays = 3;  // NEWマークを表示する日数
+                            $now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
+                            $entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
+                            $progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
+                            ?>
+
                             <!-- ここにループ処理 -->
                             <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
-                                <p>【<?php the_title(); ?>】</p>
+                                <?php
+                                if ($leavedays > $progress) {
+                                    echo '<span class="new-mark">NEW</span>';
+                                }
+                                ?>
+                                【<?php the_title(); ?>】
                                 <?php
                                 $pic = get_field('pic');
                                 $pic_url = $pic['url'];

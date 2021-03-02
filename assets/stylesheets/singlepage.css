@@ -151,6 +151,10 @@
   margin: 0 auto;
 } */
 
+.remodal {
+  font-family: "Noto Serif JP", serif;
+}
+
 .remodal-pic {
   width: 90%;
   margin: 2% 0;
@@ -307,10 +311,15 @@
 
   .remodal-pic {
     width: 80%;
-    margin: 1% 0;
+    margin: 0.5% 0 0;
   }
 
   .remodal-textleft {
+    margin-bottom: 2%;
     font-size: 1.25rem;
+  }
+
+  .remodal-field__list {
+    margin-top: 1%;
   }
 }

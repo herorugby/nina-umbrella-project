@@ -74,7 +74,7 @@ function add_nina_styles()
 
     if (is_archive() || is_page('workshop') || is_tax()) {
         wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
-        // wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
+        wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
     }
     if (is_page('privacy') || is_page('trade')) {
         wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
