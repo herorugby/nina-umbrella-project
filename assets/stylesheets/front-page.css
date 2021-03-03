@@ -48,12 +48,12 @@ p,
 
 /* header__img-slide */
 .header__img-slide-show {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .header__img-slide-show picture img {
-  height: 75vh;
-  border-radius: 0 0 5px 5px;
+  height: 50vh;
 }
 
 /* scroll guide */
@@ -286,8 +286,12 @@ p,
   }
 
   /* header__img-slide */
+  .header__img-slide-show {
+    width: 50%;
+  }
+
   .header__img-slide-show picture img {
-    height: 100vh;
+    height: 50vh;
   }
 
   /* scroll guide */
