@@ -3,7 +3,7 @@ jQuery(function () {
     jQuery(".hamburger-icon").on("click", function () {
         jQuery("#gnav").toggleClass("is-active");
         jQuery(this).next().slideToggle();
-        jQuery("#hamburger-btn").toggleClass("fa-l#hamburger-btnst-ul");
+        jQuery("#hamburger-btn").toggleClass("fa-list-ul");
         jQuery("#hamburger-btn").toggleClass("fa-times");
     });
 });
