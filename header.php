@@ -25,28 +25,21 @@
 
         <div class="top__logo-place">
             <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="nina-umbrella-projectのロゴ">
-            <h1 class="top__title">nina</h1>
-            <p class="top__title__catch">be with you</p>
+            <div class="top__logo-place--flex">
+                <h1 class="top__title">nina</h1>
+                <p class="top__title__catch">be with you</p>
+            </div>
+            <div class="hamburger-icon">
+                <i id="hamburger-btn" class="fas fa-list-ul"></i>
+            </div>
         </div>
 
         <div class="header__img-slide-show">
-            <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop1.jpg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet1.jpg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp1.jpg" alt="トップページのスライド画像">
-            </picture>
-            <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop2.jpg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet2.jpg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp2.jpg" alt="トップページのスライド画像">
-            </picture>
-            <picture class="top__img">
-                <source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_desktop3.jpg">
-                <source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_tablet3.jpg">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show_sp3.jpg" alt="トップページのスライド画像">
-            </picture>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpg" alt="トップページのスライド画像">
         </div>
-        <span id="mouse"></span>
+        <!-- <span id="mouse"></span> -->
 
         <nav id="gnav" class="container gnav__container">
             <ul class="gnav__list">
@@ -56,8 +49,6 @@
             </ul>
         </nav>
 
-        <div class="hamburger-icon">
-            <i id="hamburger-btn" class="fas fa-list-ul"></i>
-        </div>
+
 
     </header>

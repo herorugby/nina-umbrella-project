@@ -18,42 +18,71 @@ p,
 /* top title setting */
 .top__title__catch {
   font-family: "Dancing Script", cursive;
-  font-size: 1.125rem;
+  font-size: 0.5rem;
+  /* width: 100%;
+  margin: 0; */
 }
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
 .top__logo-place {
-  display: block;
-  position: absolute;
-  top: 37.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  /* display: table; */
+  justify-content: center;
+  /* transform: translate(-50%, -50%); */
   width: 50%;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  z-index: 1;
-  color: #fff;
-  opacity: 0.8;
+  /* z-index: 1; */
+  color: #000;
+  /* opacity: 0.8; */
 }
 
 .top__logo {
-  width: 50%;
-  height: auto;
-  border-radius: 3%;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 15%;
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  /* height: auto; */
+  /* border-radius: 3%; */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* z-index: 1; */
+}
+
+.top__logo-place--flex {
+  width: 30%;
+  margin-top: 5%;
+  /* display: table-cell; */
+}
+
+/* hamburger icon setting */
+.hamburger-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: \f0ca;
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  text-align: center;
   z-index: 1;
+  width: 35px;
+  line-height: 35px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#hamburger-btn {
+  color: #4169e1;
 }
 
 /* header__img-slide */
 .header__img-slide-show {
-  width: 50%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 30% auto 70%;
 }
 
 .header__img-slide-show picture img {
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 /* scroll guide */
@@ -64,13 +93,13 @@ p,
 }
 
 #mouse {
-  top: 70%;
+  top: 90%;
   width: 25px;
   height: 45px;
   margin-left: -15px;
   margin-top: -33px;
   box-sizing: border-box;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 25px;
 }
 
@@ -79,7 +108,7 @@ p,
   top: 10px;
   width: 8px;
   height: 8px;
-  background: #fff;
+  background: #000;
   margin-left: -4px;
   border-radius: 4px;
   animation: scroll 2.5s infinite;
@@ -159,25 +188,6 @@ p,
 
 #gnav.is-active {
   transform: rotateZ(0deg);
-}
-
-/* hamburger icon setting */
-.hamburger-icon {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: \f0ca;
-  position: fixed;
-  top: 2%;
-  right: 5%;
-  text-align: center;
-  z-index: 1;
-  width: 35px;
-  line-height: 35px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-#hamburger-btn {
-  color: #4169e1;
 }
 
 /* css 561px or more ~tablet.ver~ */

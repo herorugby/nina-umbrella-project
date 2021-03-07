@@ -35,7 +35,8 @@ img {
 /* font size setting */
 /* css less than 559px ~mobile.ver~ */
 h1 {
-  font-size: 1.625rem;
+  /* font-size: 1.625rem; */
+  font-size: 1rem;
 }
 
 h2 {
