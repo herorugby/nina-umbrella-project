@@ -13,6 +13,7 @@
 /* base site setting */
 .footer__base-link {
   color: #666;
+  font-size: 0.875rem;
 }
 
 .links__btn {
