@@ -16,7 +16,7 @@
 				<?php $my_query->the_post(); ?>
 
 				<?php
-				$leavedays = 10;  // NEWマークを表示する日数
+				$leavedays = 15;  // NEWマークを表示する日数
 				$now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
 				$entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
 				$progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -90,7 +90,7 @@
 		</section>
 
 		<section id="about-sle" class="main__about fadeIn">
-			<h2 class="sub__title">About sle/lupus</h2>
+			<h2 class="sub__title last_subtitle">About sle/lupus</h2>
 			<div class="about-sle__details card-design">
 				<picture class="about-sle__img card-design__img">
 					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__about-sle_desktop.jpg">
