@@ -31,8 +31,9 @@
 				?>
 
 			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
 		<?php endif; ?>
-		<?php wp_reset_postdata(); ?>
+
 
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>

@@ -413,7 +413,7 @@ section {
 }
 
 .contents__title {
-  padding: 5% 3% 4%;
+  padding: 5% 0;
   /* margin: 0 0 3% 2%; */
   /* border-left: 6px double #000;
   color: #444; */
@@ -549,21 +549,11 @@ section {
   }
 
   .sub__title:after {
-    /* top: 0; */
     left: 20%;
-    /* width: 20px;
-    height: 20px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000; */
   }
 
   .sub__title:before {
     right: 20%;
-    /* bottom: 0;
-    width: 20px;
-    height: 20px;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000; */
   }
 
   /* remodalウィンドウ内の設定 */
@@ -589,6 +579,21 @@ section {
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
+  .sub__title:after {
+    left: 30%;
+  }
+
+  .sub__title:before {
+    right: 30%;
+  }
+
+  .about-nina__details,
+  .about-sle__details {
+    /* 幅を決める */
+    /* width: ; */
+    /* padding: 10%; */
+  }
+
   .new-info__list,
   .new-info__all-items__link {
     width: 30%;
@@ -600,11 +605,12 @@ section {
   }
 
   .card-design {
+    width: 40%;
     padding-top: 0;
   }
 
   .contents__title {
-    padding: 1% 0 1% 3%;
+    padding: 1% 0;
     margin-bottom: 1%;
   }
 
@@ -662,21 +668,22 @@ section {
   .about-sle__img {
     /* この下をいじると画像幅変わる */
     /* display: block; */
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
 
   .about-comments__description,
   .about-sle__description {
     display: block;
-    width: 90%;
+    width: 100%;
     padding-left: 0;
     margin: 0 auto;
   }
 
   .about-comments__img img,
   .about-sle__img img {
-    margin-left: 0;
+    /* width: 60%; */
+    /* margin-left: 0; */
   }
 
   .about-sle__description a {

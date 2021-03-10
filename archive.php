@@ -66,8 +66,9 @@
                             </a>
 
                         <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
+
 
                     <!-- 個別リモーダルの表示 -->
                     <?php if ($my_query->have_posts()) : ?>
@@ -114,8 +115,9 @@
                             </div>
 
                         <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
+
 
                 </div>
             </div>

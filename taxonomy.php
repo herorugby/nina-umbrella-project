@@ -80,8 +80,9 @@
                             </a>
 
                         <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
+
 
                     <!-- 個別投稿を見るモーダル -->
                     <?php $item_cate_term = wp_get_object_terms($post->ID, 'item_cate'); ?>
@@ -138,8 +139,9 @@
                             </div>
 
                         <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
-                    <?php wp_reset_postdata(); ?>
+
 
                 </div>
             </div>
