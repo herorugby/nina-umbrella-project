@@ -15,7 +15,7 @@ jQuery(window).scroll(function() {
 });
 function fixedGnav() {
     var fixed = jQuery("#gnav");
-    var startPos = jQuery('#about-nina');
+    var startPos = jQuery('.top__title');
     var startPosTop = startPos.offset().top;
     var winScroll = jQuery(window).scrollTop();
     if(winScroll > startPosTop) {
@@ -60,7 +60,7 @@ jQuery(function () {
 
     // will come of topBtn function
     jQuery(window).scroll(function () {
-        if (jQuery(this).scrollTop() > 200) {
+        if (jQuery(this).scrollTop() > 100) {
             topBtn.fadeIn(600);
         } else {
             topBtn.fadeOut(300);

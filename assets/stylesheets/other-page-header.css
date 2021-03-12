@@ -4,12 +4,12 @@
 .main-wrap {
   width: 94%;
   height: auto;
-  padding: 2% 3%;
+  padding: 3%;
   background-color: #fff;
 }
 
 .header-wrap {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 
 /* fonts setting */
@@ -29,7 +29,7 @@ p,
 /* Header */
 /* css less than 559px ~mobile.ver~ */
 .top__title {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -119,11 +119,11 @@ p,
 /* Header */
 @media screen and (min-width: 560px) {
   .header-wrap {
-    padding-top: 1%;
+    /* padding-top: 1%; */
   }
 
   .top__title {
-    width: 40%;
+    width: 35%;
   }
 
   /* breadcrumb setting */
@@ -175,7 +175,7 @@ p,
 /* Header */
 @media screen and (min-width: 960px) {
   .top__title {
-    width: 30%;
+    width: 20%;
   }
 
   /* gnav setting */

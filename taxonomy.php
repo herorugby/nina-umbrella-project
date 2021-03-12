@@ -26,23 +26,23 @@
                 <div class="all-items-container">
 
                     <!-- 投稿カテゴリー一覧 -->
-                    <!-- <?php
-                            $item_cate = get_terms(
-                                array(
-                                    'taxonomy' => 'item_cate'
-                                )
-                            );
-                            if (!empty($item_cate)) :
-                            ?>
-                            <ul class="all-items__list">
-                                <?php foreach ($item_cate as $item) : ?>
-                                    <li class="all-items__list__item">
-                                        <a href="<?php echo get_term_link($item); ?>">-<?php echo $item->name ?>-
-                                        </a>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        <?php endif; ?> -->
+                    <?php
+                    $item_cate = get_terms(
+                        array(
+                            'taxonomy' => 'item_cate'
+                        )
+                    );
+                    if (!empty($item_cate)) :
+                    ?>
+                        <ul class="all-items__list">
+                            <?php foreach ($item_cate as $item) : ?>
+                                <li class="all-items__list__item">
+                                    <a href="<?php echo get_term_link($item); ?>">-<?php echo $item->name ?>-
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
 
                     <!-- 投稿一覧の表示 -->
                     <!-- <?php $item_cate_term = wp_get_object_terms($post->ID, 'item_cate'); ?> -->
