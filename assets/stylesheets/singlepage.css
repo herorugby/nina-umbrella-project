@@ -14,10 +14,16 @@
   opacity: 1;
 }
 
-.contents__wrap {
+/* .contents__wrap {
   width: 95%;
   height: auto;
   margin: 2% 2.5%;
+} */
+
+.main__wrap {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .sub__title {
@@ -53,11 +59,11 @@
 
 /* make card style */
 .card-design {
-  width: 80%;
+  width: 70%;
   margin: 2% auto 3%;
-  padding-top: 3%;
+  padding-top: 5%;
   /* border-radius: 5px; */
-  background-color: #fff;
+  /* background-color: #fff; */
   /* box-shadow: 0 3px 6px #ccc; */
 }
 .card-design__img {
