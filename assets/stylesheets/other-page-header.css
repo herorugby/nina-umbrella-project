@@ -16,14 +16,16 @@
 h2,
 li,
 a {
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
+  /* font-family: 'Kosugi Maru', sans-serif; */
 }
 
 h3,
 p,
 .policy__trade a,
 .policy__privacy a {
-  font-family: "Noto Serif JP", serif;
+  /* font-family: "Noto Serif JP", serif; */
+  /* font-family: 'Kosugi Maru', sans-serif; */
 }
 
 /* Header */

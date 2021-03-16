@@ -151,12 +151,6 @@
   padding-top: 2%;
 }
 
-/* remodalウィンドウ内の設定 */
-/* .wp-block-image {
-  width: 50%;
-  margin: 0 auto;
-} */
-
 .remodal {
   font-family: "Noto Serif JP", serif;
 }
@@ -247,15 +241,6 @@
     font-size: 1rem;
   }
 
-  /* .all-items__details picture img {
-    width: 90%;
-  } */
-
-  /* remodalウィンドウ内の設定 */
-  /* .wp-block-image {
-    width: 30%;
-  } */
-
   .remodal-pic {
     width: 70%;
   }
@@ -340,11 +325,6 @@
   .new-mark {
     font-size: 1.0625rem;
   }
-
-  /* remodalウィンドウ内の設定 */
-  /* .wp-block-image {
-    width: 30%;
-  } */
 
   .remodal-pic {
     width: 80%;

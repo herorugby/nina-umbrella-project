@@ -1,18 +1,23 @@
 @charset "UTF-8";
 /* fonts setting */
-h1,
+h1 {
+font-family: 'Noto Sans', sans-serif;
+}
+
 h2,
 li,
 a,
 .top__logo-place a {
-  font-family: "Lora", serif;
+  /* font-family: "Lora", serif; */
+  /* font-family: 'Kosugi Maru', sans-serif; */
 }
 
 h3,
 p,
 .policy__trade a,
 .policy__privacy a {
-  font-family: "Noto Serif JP", serif;
+  /* font-family: "Noto Serif JP", serif; */
+  /* font-family: 'Kosugi Maru', sans-serif; */
 }
 
 /* top title setting */
@@ -29,14 +34,11 @@ p,
   display: flex;
   /* display: table; */
   justify-content: center;
-  /* transform: translate(-50%, -50%); */
   width: 50%;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  /* z-index: 1; */
   color: #000;
-  /* opacity: 0.8; */
 }
 
 .top__logo {
@@ -44,16 +46,11 @@ p,
   position: absolute;
   top: 3.5%;
   left: 5%;
-  /* height: auto; */
-  /* border-radius: 3%; */
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* z-index: 1; */
 }
 
 .top__logo-place--flex {
   width: 30%;
   margin-top: 20%;
-  /* display: table-cell; */
 }
 
 /* hamburger icon setting */
@@ -69,6 +66,7 @@ p,
   width: 35px;
   line-height: 35px;
   background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.0625rem;
 }
 
 #hamburger-btn {
@@ -79,10 +77,6 @@ p,
 .header__img-slide-show {
   width: 65%;
   margin: 40% auto 30%;
-}
-
-.header__img-slide-show picture img {
-  /* height: 50vh; */
 }
 
 /* gnav setting */
@@ -146,7 +140,6 @@ p,
   .top__logo-place--flex {
     width: 30%;
     margin-top: 20%;
-    /* display: table-cell; */
   }
 
   .top__title__catch {
@@ -157,9 +150,6 @@ p,
   .header__img-slide-show {
     width: 60%;
     margin: 20% auto 40%;
-  }
-  .header__img-slide-show picture img {
-    /* height: 80vh; */
   }
 
   /* gnav setting */
@@ -201,10 +191,6 @@ p,
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
-  .top__logo-place {
-    /* top: 30%; */
-  }
-
   .top__logo-place--flex {
     width: 30%;
     margin-top: 12.5%;
@@ -226,10 +212,6 @@ p,
     margin: 10% auto;
   }
 
-  .header__img-slide-show picture img {
-    /* height: 50vh; */
-  }
-
   /* gnav setting */
   #gnav {
     height: 6.5vh;
@@ -243,7 +225,6 @@ p,
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
-
 section {
   margin: 5% auto;
 }
@@ -307,12 +288,6 @@ section {
   padding-top: 5%;
   /* border-radius: 5px; */
 }
-
-/*
-.card-design__img {
-  width: 90%;
-  margin: 0 auto;
-} */
 
 .card-design__img img {
   width: 100%;
@@ -410,9 +385,6 @@ section {
 }
 
 /* about comment */
-/* .about-comments__description {
-  margin-bottom: 5%;
-} */
 
 /* about-sle */
 .about-sle__details {
@@ -536,20 +508,6 @@ section {
     margin-top: 5%;
     /* padding-right: 0; */
   }
-
-  /* remodalウィンドウ内の設定 */
-  /* .wp-block-image {
-    width: 30%;
-  }
-
-  .remodal-pic {
-    width: 80%;
-    margin: 1% 0;
-  }
-
-  .remodal-textleft {
-    font-size: 1.25rem;
-  } */
 
   /* about-nina */
   .about-nina__imgset {
