@@ -58,8 +58,9 @@ add_filter('document_title_parts', 'nina_document_title_parts');
 function add_nina_styles()
 {
     wp_enqueue_style('nina_reset_style', get_template_directory_uri() . '/assets/stylesheets/reset.css');
+    wp_enqueue_style('nina_base_style', get_template_directory_uri() . '/assets/stylesheets/base.css');
 
-    if (is_home() || is_archive() || is_tax()) {
+    if (is_archive() || is_tax()) {
         // remodal css
         wp_enqueue_style('remodal', get_template_directory_uri() . '/assets/stylesheets/remodal.css');
         wp_enqueue_style('remodal_theme', get_template_directory_uri() . '/assets/stylesheets/remodal-default-theme.css');

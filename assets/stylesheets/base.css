@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* css less than 559px ~mobile.ver~ */
+
+/* breadcrumb setting */
+.breadcrumb__list {
+  margin: 3% 0 3% 3%;
+  font-size: 1rem;
+}
+
+.breadcrumb__item {
+  margin: 0 1%;
+}
+
+.breadcrumb__item a,
+.breadcrumb__item a:visited {
+  text-decoration: none;
+  color: #4169e1;
+}
+
+/* fadein setting */
+.fadeIn {
+  transform: translate(0, -30px);
+  transition: 3s;
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* card-design */
+.card-design {
+  width: 70%;
+  margin: 2% auto 3%;
+  padding-top: 5%;
+}
+
+.card-design__description {
+  color: #666;
+  letter-spacing: 0.07em;
+}
+
+/* css 561px or more ~tablet.ver~ */
+@media screen and (min-width: 560px) {
+  /* breadcrumb setting */
+  .breadcrumb__list {
+    margin-top: 2%;
+  }
+
+  .breadcrumb__item {
+    font-size: 1.125rem;
+  }
+}
+
+/* css 960px or more ~desktop.ver~ */
+@media screen and (min-width: 960px) {
+  /* breadcrumb setting */
+  .breadcrumb__list {
+    margin-top: 1%;
+  }
+
+  .breadcrumb__item {
+    font-size: 1.25rem;
+  }
+
+  /* card-design */
+  .card-design {
+    width: 50%;
+  }
+
+  .card-design__description {
+    margin-top: 5%;
+  }
+}

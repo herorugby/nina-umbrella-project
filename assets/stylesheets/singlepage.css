@@ -2,88 +2,12 @@
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
-/* contents common setting */
-.fadeIn {
-  transform: translate(0, -30px);
-  transition: 3s;
-  opacity: 0;
-}
-
-.fadeIn.animated {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-/* .contents__wrap {
-  width: 95%;
-  height: auto;
-  margin: 2% 2.5%;
-} */
-
-.main__wrap {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.sub__title {
-  position: relative;
-  padding: 1em 2em;
-  text-align: center;
-  margin: 8% 0 5%;
-}
-
-.sub__title:before,
-.sub__title:after {
-  position: absolute;
-  content: "";
-}
-
-.sub__title:after {
-  top: 0;
-  left: 10%;
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
-}
-
-.sub__title:before {
-  right: 10%;
-  bottom: 0;
-  width: 20px;
-  height: 20px;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
-}
-
 /* make card style */
-.card-design {
-  width: 70%;
-  margin: 2% auto 3%;
-  padding-top: 5%;
-  /* border-radius: 5px; */
-  /* background-color: #fff; */
-  /* box-shadow: 0 3px 6px #ccc; */
-}
-.card-design__img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
-}
 .contents__title {
   /* text-align: center; */
   padding: 2% 0;
   margin: 0;
-  /* border-left: 6px double #000; */
   color: #444;
-}
-
-.card-design__description {
-  /* padding: 2%; */
-  color: #666;
 }
 
 .workshop__description_care {
@@ -91,9 +15,6 @@
 }
 
 /* archives.php */
-/* .category__title {
-  font-size: 0.875rem;
-} */
 .all-items__list {
   display: flex;
   flex-wrap: wrap;
@@ -133,7 +54,7 @@
   color: #000;
   /* background-color: #fefefe; */
   font-size: 0.875rem;
-  font-family: "Noto Serif JP", serif;
+  /* font-family: "Noto Serif JP", serif; */
 }
 
 .all-items__details:visited {
@@ -149,10 +70,6 @@
   width: 150px;
   margin: 0 auto;
   padding-top: 2%;
-}
-
-.remodal {
-  font-family: "Noto Serif JP", serif;
 }
 
 .remodal-pic {
@@ -172,47 +89,18 @@
 
 .remodal-field__list__item {
   margin-top: 1%;
-  font-family: "Noto Serif JP", serif;
+  /* font-family: "Noto Serif JP", serif; */
 }
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
-  .main-wrap {
+  /* .main-wrap {
     padding-top: 0;
-  }
+  } */
 
   section {
     margin: 1% auto;
-  }
-
-  .sub__title {
-    /* margin-top: 0; */
-  }
-
-  .sub__title:after {
-    left: 20%;
-  }
-
-  .sub__title:before {
-    right: 20%;
-  }
-
-  /* contents common setting */
-  .contents__wrap {
-    width: 93%;
-    margin: 2% auto;
-  }
-
-  /* workshop.php */
-  .workshop__details {
-    /* 幅を決める */
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .workshop__description_care {
-    /* padding: 0 2% 1%; */
   }
 
   /* archives.php */
@@ -254,48 +142,15 @@
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
-  .sub__title:after {
-    left: 30%;
-  }
-
-  .sub__title:before {
-    right: 30%;
-  }
-
-  .card-design {
-    padding-top: 0;
-  }
-
   .contents__title {
     padding: 1% 0 1% 3%;
     margin-bottom: 1%;
-  }
-
-  .workshop__details {
-    /* 幅を決める */
-    width: 50%;
-  }
-
-  .details-container {
-    /* display: flex; */
-    /* display: table; */
-  }
-
-  .card-design__img,
-  .card-design__description {
-    /* width: 40%; */
-    /* display: table-cell; */
-    /* vertical-align: middle; */
   }
 
   .workshop__img--mgtp,
   .workshop__description--mgtp {
     padding-top: 0;
     padding-bottom: 0;
-  }
-
-  .card-design__description {
-    padding-right: 0;
   }
 
   .workshop__description_care {

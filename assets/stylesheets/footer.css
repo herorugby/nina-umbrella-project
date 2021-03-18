@@ -7,7 +7,7 @@
   height: auto;
   padding: 2% 3%;
   text-align: center;
-  background-color: #696969;
+  background-color: #fff;
 }
 
 /* base site setting */
@@ -101,13 +101,13 @@
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.7);
+  color: #000;
+  background: #f5deb3;
   font-size: 1rem;
 }
 
 .page-up-icon:visited {
-  color: #fff;
+  color: #000;
 }
 
 /* css 561px or more ~tablet.ver~ */
