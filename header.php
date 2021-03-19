@@ -18,33 +18,34 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header id="header">
+    <div class="all-wrap">
+        <header id="header">
 
-        <div class="top__logo-place">
-            <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="nina-umbrella-projectのロゴ">
-            <div class="top__logo-place--flex">
-                <h1 class="top__title">nina</h1>
-                <p class="top__title__catch">be with you</p>
+            <div class="top__logo-place">
+                <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="nina-umbrella-projectのロゴ">
+                <div class="main-title__block">
+                    <h1 class="main-title">nina</h1>
+                    <p class="main-title__catch">be with you</p>
+                </div>
+                <div class="hamburger-icon">
+                    <i id="hamburger-btn" class="fas fa-list-ul"></i>
+                </div>
             </div>
-            <div class="hamburger-icon">
-                <i id="hamburger-btn" class="fas fa-list-ul"></i>
+
+            <div class="header__img-slide-show">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpg" alt="トップページのスライド画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpg" alt="トップページのスライド画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpg" alt="トップページのスライド画像">
             </div>
-        </div>
 
-        <div class="header__img-slide-show">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpg" alt="トップページのスライド画像">
-        </div>
-
-        <nav id="gnav" class="container gnav__container">
-            <ul class="gnav__list">
-                <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME & About</a></li>
-                <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/workshop/')); ?>">Workshop</a></li>
-                <li class="gnav__list__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
-            </ul>
-        </nav>
+            <nav id="gnav" class="container gnav__container">
+                <ul class="gnav__list">
+                    <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME & About</a></li>
+                    <li class="gnav__list__item"><a href="<?php echo esc_url(home_url('/workshop/')); ?>">Workshop</a></li>
+                    <li class="gnav__list__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
+                </ul>
+            </nav>
 
 
 
-    </header>
+        </header>

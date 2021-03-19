@@ -15,7 +15,7 @@ jQuery(window).scroll(function() {
 });
 function fixedGnav() {
     var fixed = jQuery("#gnav");
-    var startPos = jQuery('.top__title');
+    var startPos = jQuery('.main-title');
     var startPosTop = startPos.offset().top;
     var winScroll = jQuery(window).scrollTop();
     if(winScroll > startPosTop) {

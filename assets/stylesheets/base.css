@@ -7,7 +7,7 @@
   font-weight: 900;
   content: \f0ca;
   position: fixed;
-  top: 5%;
+  top: 3%;
   right: 5%;
   text-align: center;
   z-index: 2;
@@ -211,6 +211,11 @@
 
   /* gnav setting */
   #gnav {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 1440px;
+    /* text-align: center; */
     height: 6.5vh;
   }
 

@@ -26,9 +26,9 @@
     <header id="header">
 
         <div class="header-wrap">
-            <h1 class="top__title">
-                <a class="top__logo-place" href="<?php echo esc_url(home_url('/')); ?>">
-                    <img class="top__logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/sub_logo.png" alt="nina-umbrella-projectのロゴ">
+            <h1 class="other-main__title">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sub_logo.png" alt="nina-umbrella-projectのロゴ">
                 </a>
             </h1>
         </div>
