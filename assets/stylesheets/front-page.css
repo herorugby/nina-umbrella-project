@@ -75,7 +75,7 @@ h1 {
   }
 
   .top__logo {
-    width: 8%;
+    width: 7%;
     top: 8%;
     left: 8%;
   }
@@ -93,59 +93,18 @@ h1 {
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
-section {
-  margin: 5% auto;
-}
-
-/* contents common setting */
-
-.last_subtitle {
-  margin-top: 8%;
-}
-
-.contents__title {
-  padding: 5% 0;
-}
-
 .new-info__cap {
   text-align: center;
-  color: red;
-}
-
-.new-info__list {
-  width: 80%;
-  margin: 1% auto 0;
-}
-
-.new-info__list__items {
-  color: #4169e1;
-  font-size: 1rem;
-}
-
-.item-jump-taxonomy {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  color: #000;
-  font-family: "Noto Serif JP", serif;
-  font-size: 0.9rem;
-}
-
-.item-jump-taxonomy:visited {
-  color: #000;
-}
-
-.fa-hand-point-right {
-  color: #000;
+  color: #dc143c;
 }
 
 .new-info__all-items__link {
   display: block;
   width: 50%;
-  margin: 2% auto 15%;
+  margin: 2% auto 10%;
   text-decoration: none;
   color: #000;
   border-radius: 5px;
-  background-color: #fff;
   box-shadow: 2px 3px 6px #ccc;
   text-align: center;
 }
@@ -153,9 +112,8 @@ section {
 /* about-nina */
 .about-nina__logo_img {
   display: block;
-  width: 65%;
+  width: 90%;
   margin: 0 auto;
-  border-radius: 5px 5px 0 0;
 }
 
 /* about comment */
@@ -170,13 +128,13 @@ section {
   display: block;
   padding-top: 3%;
   text-decoration: none;
-  color: #4169e1;
+  color: #dc143c;
   font-weight: 600;
 }
 
-.about-sle__description__last-child {
+/* .about-sle__description__last-child {
   padding-top: 0;
-}
+} */
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
@@ -185,13 +143,10 @@ section {
     margin: 3% auto;
   }
 
-  /* contents common setting */
-  .new-info__list,
   .new-info__all-items__link {
     width: 40%;
   }
 
-  .new-info__list__items,
   .new-info__all-items__link {
     font-size: 1.125rem;
   }
@@ -205,19 +160,12 @@ section {
 /* css 960px or more ~desktop.ver~ */
 /* Main */
 @media screen and (min-width: 960px) {
-  .new-info__list,
   .new-info__all-items__link {
     width: 30%;
   }
 
-  .new-info__list__items,
   .new-info__all-items__link {
     font-size: 1.25rem;
-  }
-
-  .contents__title {
-    padding: 1% 0;
-    margin-bottom: 1%;
   }
 
   /* about-nina */
@@ -225,15 +173,7 @@ section {
     width: 20%;
   }
 
-  .about-comments__description,
-  .about-sle__description {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    margin: 0 auto;
-  }
-
   .about-sle__description a {
-    padding-top: 1%;
+    padding: 0 0 2%;
   }
 }

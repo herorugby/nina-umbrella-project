@@ -26,14 +26,14 @@
                 <!-- ターム一覧表示 -->
 
                 <!-- 投稿カテゴリー一覧 -->
-                <?php
-                $item_cate = get_terms(
-                    array(
-                        'taxonomy' => 'item_cate'
-                    )
-                );
-                if (!empty($item_cate)) :
-                ?>
+                <!-- <?php
+                        $item_cate = get_terms(
+                            array(
+                                'taxonomy' => 'item_cate'
+                            )
+                        );
+                        if (!empty($item_cate)) :
+                        ?>
                     <ul class="all-items__list">
                         <?php foreach ($item_cate as $item) : ?>
                             <li class="all-items__list__item">
@@ -42,7 +42,7 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
-                <?php endif; ?>
+                <?php endif; ?> -->
 
                 <div class="all-items-container">
                     <!-- 投稿一覧の表示 -->

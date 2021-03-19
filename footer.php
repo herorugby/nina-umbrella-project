@@ -1,7 +1,7 @@
 <footer id="footer">
 
     <div class="footer-wrap">
-        <p class="footer__base-link">各アクセサリーのご購入は、下記をクリックしてください。<br>※BASEネットショップ管理画面へ移動します。</p>
+        <p class="footer__base-link">各アクセサリーのご購入は、<br>下記をクリックしてください。<br>※BASEネットショップ管理画面へ移動します。</p>
         <div class="links__btn">
             <a href="https://ninaumbrella.thebase.in/" target="_blank" rel="noopener"><img class="links__base-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/base_logo_horizontal_black.png" alt="BASEネットショップへ"></a>
         </div>

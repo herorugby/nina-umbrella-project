@@ -7,12 +7,12 @@
   height: auto;
   padding: 2% 3%;
   text-align: center;
-  background-color: #fff;
+  background-color: #fdfdfd;
 }
 
 /* base site setting */
 .footer__base-link {
-  color: #666;
+  /* color: #666; */
   font-size: 0.875rem;
 }
 
@@ -47,7 +47,7 @@
   display: inline-block;
   width: 50px;
   height: 2px;
-  background-color: #666;
+  background: #000;
 }
 
 .official-sns:before {

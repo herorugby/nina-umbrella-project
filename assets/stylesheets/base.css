@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
 /* css less than 559px ~mobile.ver~ */
+/* hamburger icon setting */
+.hamburger-icon {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: \f0ca;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  text-align: center;
+  z-index: 2;
+  width: 35px;
+  line-height: 35px;
+  font-size: 1.0625rem;
+}
+
+#hamburger-btn {
+  color: #000;
+}
 
 /* breadcrumb setting */
 .breadcrumb__list {
@@ -15,7 +33,88 @@
 .breadcrumb__item a,
 .breadcrumb__item a:visited {
   text-decoration: none;
-  color: #4169e1;
+  color: #dc143c;
+}
+
+/* gnav setting */
+#gnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5deb3;
+}
+
+#gnav {
+  transform-origin: top left;
+  transform: rotateZ(-90deg);
+  transition: all 0.4s ease-out;
+}
+
+#gnav.is-active {
+  transform: rotateZ(0deg);
+}
+
+.gnav__list__item {
+  width: 100%;
+  height: auto;
+  padding: 7% 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gnav__list__item a {
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.gnav__list__item a:visited {
+  color: #000;
+}
+
+.sub__title {
+  position: relative;
+  padding: 1em 2em;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.sub__title:before,
+.sub__title:after {
+  position: absolute;
+  content: "";
+}
+
+.sub__title:after {
+  top: 0;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.sub__title:before {
+  bottom: 0;
+  right: 10%;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.contents__title {
+  margin: 8% 0 1%;
+  text-decoration: underline #000;
+  line-height: 1.2;
 }
 
 /* fadein setting */
@@ -34,16 +133,21 @@
 .card-design {
   width: 70%;
   margin: 2% auto 3%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .card-design__description {
-  color: #666;
   letter-spacing: 0.07em;
 }
 
 /* css 561px or more ~tablet.ver~ */
 @media screen and (min-width: 560px) {
+  /* hamburger icon */
+  .hamburger-icon,
+  #hamburger-btn {
+    display: none;
+  }
+
   /* breadcrumb setting */
   .breadcrumb__list {
     margin-top: 2%;
@@ -51,6 +155,46 @@
 
   .breadcrumb__item {
     font-size: 1.125rem;
+  }
+
+  /* gnav setting */
+  #gnav {
+    transform: none;
+    width: 100%;
+    height: 8vh;
+    opacity: 0;
+  }
+
+  #gnav.is-fixed {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .gnav__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gnav__list__item {
+    display: inline-block;
+    width: 30%;
+    padding: 0;
+  }
+
+  .gnav__list__item a {
+    font-size: 1.125rem;
+  }
+
+  .sub__title:after {
+    left: 20%;
+  }
+
+  .sub__title:before {
+    right: 20%;
+  }
+
+  .contents__title {
+    line-height: 1.3;
   }
 }
 
@@ -65,12 +209,29 @@
     font-size: 1.25rem;
   }
 
+  /* gnav setting */
+  #gnav {
+    height: 6.5vh;
+  }
+
+  .gnav__list__item a {
+    font-size: 1.25rem;
+  }
+
+  .sub__title:after {
+    left: 30%;
+  }
+
+  .sub__title:before {
+    right: 30%;
+  }
+
+  .contents__title {
+    line-height: 1.4;
+  }
+
   /* card-design */
   .card-design {
     width: 50%;
-  }
-
-  .card-design__description {
-    margin-top: 5%;
   }
 }

@@ -29,32 +29,24 @@
 				<?php
 				}
 				?>
-
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 		<?php endif; ?>
-
 
 		<section id="about-nina" class="main__about">
 			<h2 class="sub__title">About</h2>
 
 			<section class="card-design fadeIn">
 				<h3 class="contents__title">nina umbrella project</h3>
-				<!-- <div class="details-container"> -->
-				<div class="about-nina__imgset">
-					<img class="about-nina__logo_img" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="ninaプロジェクトのロゴ">
-				</div>
-
+				<img class="about-nina__logo_img" src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo.png" alt="ninaプロジェクトのロゴ">
 				<p class="about-nina__description card-design__description">
 					プロゴルファーであり、「nina」のアクセサリーを制作する岡村&ensp;咲自身も患う指定難病、全身性エリテマトーデス(SLE/Lupus)の患者さんへ、遮光100%の晴れ雨兼用日傘を届けるプロジェクトです。<br>
 					SLE患者さんの抱える問題の１つとして日光過敏症に対して、少しでも快適に外出が出来るよう寄贈する傘は、「nina」で販売するアクセサリーの売り上げの一部を資金として使用致します。<br>
 				</p>
-				<!-- </div> -->
 			</section>
 
 			<section class="about-nina__details__contents card-design fadeIn">
 				<h3 class="contents__title">遮光100%<br>UVカット100%<br>晴れ雨兼用日傘とは</h3>
-				<!-- <div class="details-container"> -->
 				<picture class="about-nina__umbrella_img card-design__img">
 					<source media="(min-width: 960px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__umbrella_desktop.jpeg">
 					<source media="(min-width: 560px)" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/front-page__umbrella_tablet.jpeg">
@@ -67,7 +59,6 @@
 					そんな貴重な生地を使用した遮光100%の日傘の価格帯は、約1万円〜となります。<br>
 					※この製品をプライベートで実際に使用している岡村の感想と、製品の説明を一部抜粋して書かせて頂いております。<br>
 				</p>
-				<!-- </div> -->
 			</section>
 
 			<section class="about-nina__details__contents card-design fadeIn">
