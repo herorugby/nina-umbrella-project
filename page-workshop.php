@@ -23,7 +23,7 @@
                 </picture>
                 <p class="workshop__description--mgtp card-design__description">
                     nina で制作するアクセサリーに使用する素材は以下の通りです。<br>
-                    ・14kgf / 14金ゴールドフィルド
+                    ・14kgf / 14金ゴールドフィルド<br>
                     (ピアスホール、キャッチ、全ての連結パーツ、
                     ワイヤー、チェーン、アレンジパーツ)<br>
                     ・淡水パール<br>

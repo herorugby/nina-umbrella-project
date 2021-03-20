@@ -12,7 +12,6 @@
 
 /* base site setting */
 .footer__base-link {
-  /* color: #666; */
   font-size: 0.875rem;
 }
 
@@ -185,6 +184,8 @@
 
   /* scroll top icon setting */
   .page-up-icon {
+    width: 60px;
     font-size: 1.25rem;
+    right: calc(50% - 720px);
   }
 }

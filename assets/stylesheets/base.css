@@ -133,7 +133,6 @@
 .card-design {
   width: 70%;
   margin: 2% auto 3%;
-  /* padding-top: 5%; */
 }
 
 .card-design__description {
@@ -150,7 +149,7 @@
 
   /* breadcrumb setting */
   .breadcrumb__list {
-    margin-top: 2%;
+    margin: 2% 0 2% 4%;
   }
 
   .breadcrumb__item {
@@ -196,13 +195,23 @@
   .contents__title {
     line-height: 1.3;
   }
+
+  /* card-design */
+  .card-design {
+    width: 60%;
+    margin: 2% auto 3%;
+  }
+
+  .card-design__description {
+    letter-spacing: 0.07em;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
 @media screen and (min-width: 960px) {
   /* breadcrumb setting */
   .breadcrumb__list {
-    margin-top: 1%;
+    margin: 1% 0 1% 5%;
   }
 
   .breadcrumb__item {
@@ -214,8 +223,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
-    max-width: 1440px;
-    /* text-align: center; */
+    max-width: 1920px;
     height: 6.5vh;
   }
 
@@ -238,5 +246,9 @@
   /* card-design */
   .card-design {
     width: 50%;
+  }
+
+  .card-design__description {
+    letter-spacing: 0.07em;
   }
 }

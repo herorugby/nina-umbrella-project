@@ -4,8 +4,13 @@
 /* css less than 559px ~mobile.ver~ */
 
 /* each block setting */
+.wrap {
+  width: 80%;
+  margin: 5% auto;
+}
+
 .sec-block {
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .description {
@@ -18,7 +23,7 @@
 @media screen and (min-width: 560px) {
   /* each block setting */
   .sec-block {
-    margin-top: 2%;
+    margin-top: 5%;
   }
 
   .description {
@@ -31,11 +36,11 @@
 @media screen and (min-width: 960px) {
   /* each block setting */
   .sec-block {
-    margin-top: 1%;
+    margin-top: 3%;
   }
 
   .description {
-    font-size: 1.0625rem;
     margin-top: 0.5%;
+    font-size: 1.0625rem;
   }
 }

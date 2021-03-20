@@ -6,8 +6,8 @@
 
 		<?php
 		$args = [
-			'post_type' => 'item', // カスタム投稿名が「item」の場合
-			'posts_per_page' => 1, // 表示させる数
+			'post_type'      => 'item', // カスタム投稿名が「item」の場合
+			'posts_per_page' => 1,      // 表示させる数
 		];
 		$my_query = new WP_Query($args);
 		?>
@@ -16,17 +16,13 @@
 				<?php $my_query->the_post(); ?>
 
 				<?php
-				$leavedays = 30;  // NEWマークを表示する日数
-				$now = date_i18n('U');  // 現在の日時のタイムスタンプを取得
-				$entry = get_the_time('U');  // unixタイムから投稿した時間までの経過時間を取得
-				$progress = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
-				?>
-				<?php
+				$leavedays = 30;                                 // NEWマークを表示する日数
+				$now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
+				$entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
+				$progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
 				if ($leavedays > $progress) {
 					echo '<p class="new-info__cap">New Item Arrival</p>';
-				?>
-					<a class="new-info__all-items__link" href="<?php echo get_post_type_archive_link('item'); ?>">check Items...</a>
-				<?php
+					echo '<a class="new-info__all-items__link" href=" ' . get_post_type_archive_link('item') . ' ">check Items...</a>';
 				}
 				?>
 			<?php endwhile; ?>

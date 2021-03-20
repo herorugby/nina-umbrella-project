@@ -18,8 +18,9 @@ p {
 
 /* font size auto control off */
 body {
-  /* max-width: 1024px;
-  margin: 0 auto; */
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -47,7 +48,7 @@ img {
 /* font size setting */
 /* css less than 559px ~mobile.ver~ */
 h1 {
-  font-size: 1rem;
+  font-size: 1.1875rem;
 }
 
 h2 {
@@ -98,20 +99,10 @@ p {
     line-height: 1.6;
     font-size: 1rem;
   }
-
-  .wrap {
-    width: 93%;
-  }
 }
 
 /* css 960px or more ~desktop.ver~ */
 @media screen and (min-width: 960px) {
-  .all-wrap {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
   h1 {
     font-size: 1.4375rem;
   }

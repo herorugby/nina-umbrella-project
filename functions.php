@@ -44,11 +44,35 @@ function nina_document_title_parts($title)
 {
     if (is_home()) {
         unset($title['tagline']);
-        $title['title'] = "あなたの輝く人生をninaと共に";
+        $title['title'] = "あなたの輝く人生をninaとともに";
     }
     return $title;
 }
 add_filter('document_title_parts', 'nina_document_title_parts');
+
+/**
+ * google fonts
+ *
+ * @return void
+ */
+function add_nina_google_font_scripts()
+{
+?>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kosugi+Maru&family=Noto+Sans&display=swap" rel="stylesheet">
+<?php
+}
+add_action('wp_enqueue_scripts', 'add_nina_google_font_scripts');
+
+/**
+ * font awesome
+ *
+ * @return void
+ */
+function add_nina_fontawesome_enqueue_scripts()
+{
+    wp_enqueue_script('nina_fontawesome', 'https://kit.fontawesome.com/72a93cd7e4.js');
+}
+add_action('wp_enqueue_scripts', 'add_nina_fontawesome_enqueue_scripts');
 
 /**
  * add css files
