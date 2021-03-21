@@ -186,6 +186,6 @@
   .page-up-icon {
     width: 60px;
     font-size: 1.25rem;
-    right: calc(50% - 720px);
+    left: calc(50% + 27.5%);
   }
 }
