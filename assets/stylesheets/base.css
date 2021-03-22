@@ -65,7 +65,8 @@
 
 .gnav__list__item {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  line-height: 5vh;
   padding: 7% 0;
   text-align: center;
   box-sizing: border-box;
