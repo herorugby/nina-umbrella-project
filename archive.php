@@ -54,7 +54,7 @@
                             <a href="#<?php the_ID(); ?>" class="all-items__details">
 
                                 <?php
-                                $leavedays = 7;                                  // NEWマークを表示する日数
+                                $leavedays = 2;                                  // NEWマークを表示する日数
                                 $now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
                                 $entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
                                 $progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -62,8 +62,7 @@
                                     echo '<span class="new-mark">NEW</span>';
                                 }
                                 ?>
-
-                                【<?php the_title(); ?>】
+                                <div><?php the_title(); ?></div>
                                 <div class="all-items__img">
                                     <?php the_post_thumbnail('thumbnail'); ?>
                                 </div>
@@ -81,7 +80,7 @@
 
                         <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
                             <?php
-                            $leavedays = 7;                                  // NEWマークを表示する日数
+                            $leavedays = 2;                                  // NEWマークを表示する日数
                             $now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
                             $entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
                             $progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -89,7 +88,7 @@
                                 echo '<span class="new-mark">NEW</span>';
                             }
                             ?>
-                            【<?php the_title(); ?>】
+                            <p><?php the_title(); ?></p>
                             <?php
                             $pic     = get_field('pic');  // フィールドの種類を取得
                             $pic_url = $pic['url'];       // フィールドに登録した画像urlを取得

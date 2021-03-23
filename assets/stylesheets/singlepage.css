@@ -75,6 +75,12 @@
   margin-top: 1%;
 }
 
+.remodal-field__list__item a,
+.remodal-field__list__item a:visited {
+  color: #dc143c;
+  text-decoration: none;
+}
+
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
