@@ -142,6 +142,10 @@
   letter-spacing: 0.07em;
 }
 
+.mgtp {
+  margin-top: 2%;
+}
+
 /* css 561px or more ~tablet.ver~ */
 @media screen and (min-width: 560px) {
   /* hamburger icon */
