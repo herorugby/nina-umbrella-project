@@ -95,7 +95,6 @@
                             ?>
                             <img class="remodal-pic" src="<?php echo $pic_url; ?>" alt="アイテム画像">
                             <div class="remodal-textleft">
-                                <?php the_content(); ?>
                                 <?php echo do_shortcode('[wp_ulike]'); ?>
                                 <ul class="remodal-field__list">
                                     <li class="remodal-field__list__item">

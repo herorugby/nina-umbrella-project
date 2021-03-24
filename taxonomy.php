@@ -3,27 +3,30 @@
 
 <main id="main" class="main">
 
+    <!-- 現在のページの情報を取得する -->
     <?php
     $item_slug = get_query_var('item_cate');
-    $item = get_term_by('slug', $item_slug, 'item_cate');
+    $item_term = get_term_by('slug', $item_slug, 'item_cate');
     ?>
+
     <ul class="container breadcrumb__list">
         <li class="breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">HOME</a></li>
         <li class="breadcrumb__item">>></li>
         <li class="breadcrumb__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
         <li class="breadcrumb__item">>></li>
-        <li class="breadcrumb__item"><?php echo $item->name; ?></li>
+        <li class="breadcrumb__item"><?php echo $item_term->name; ?></li>
     </ul>
 
     <div class="wrap">
 
         <section id="items" class="main__items">
-            <h2 class="sub__title"><?php echo $item->name; ?></h2>
+            <h2 class="sub__title"><?php echo $item_term->name; ?></h2>
 
             <div class="all-items-container">
                 <!-- 投稿一覧の表示 -->
                 <?php
-                $term = wp_get_object_terms($post->ID, 'item_cate'); //タクソノミーのタームを取得
+                // $term = get_the_terms($post->ID, 'item_cate'); //タクソノミーのタームを取得
+                $item_term = get_term_by('slug', $item_slug, 'item_cate');
                 $args = array(
                     'post_type' => 'item', // 投稿タイプがitemを取得
                     'orderby'   => 'date', // 投稿日順に並び替え
@@ -32,7 +35,7 @@
                         array(
                             'taxonomy' => 'item_cate',    // タクソノミーがitem_cateを指定する
                             'field'    => 'slug',         // スラッグを指定
-                            'terms'    => $term[0]->name, // 現在表示しているタームを取得
+                            'terms'    => $item_term->name, // 現在表示しているタームを取得
                         ),
                     ),
                 );
@@ -66,7 +69,8 @@
 
             <!-- 個別投稿を見るモーダル -->
             <?php
-            $term = wp_get_object_terms($post->ID, 'item_cate'); //タクソノミーのタームを取得
+            // $term = get_the_terms($post->ID, 'item_cate'); //タクソノミーのタームを取得
+            $item_term = get_term_by('slug', $item_slug, 'item_cate');
             $args = array(
                 'post_type' => 'item', // 投稿タイプがitemを取得
                 'orderby'   => 'date', // 投稿日順に並び替え
@@ -75,7 +79,7 @@
                     array(
                         'taxonomy' => 'item_cate',    // タクソノミーがitem_cateを指定する
                         'field'    => 'slug',         // スラッグを指定
-                        'terms'    => $term[0]->name, // 現在表示しているタームを取得
+                        'terms'    => $item_term->name, // 現在表示しているタームを取得
                     ),
                 ),
             );
@@ -103,7 +107,6 @@
 
                         <img class="remodal-pic" src="<?php echo $pic_url; ?>" alt="アイテム画像">
                         <div class="remodal-textleft">
-                            <?php the_content(); ?>
                             <?php echo do_shortcode('[wp_ulike]'); ?>
                             <ul class="remodal-field__list">
                                 <li class="remodal-field__list__item">
