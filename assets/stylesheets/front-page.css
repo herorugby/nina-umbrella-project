@@ -59,9 +59,9 @@ h1 {
 /* Header */
 @media screen and (min-width: 960px) {
   .top__logo {
-    width: 5.5%;
+    width: 100px;
     padding-top: 2%;
-    left: calc(50% - 720px);
+    left: calc(50% - 425px);
   }
 
   .main-title__catch {
