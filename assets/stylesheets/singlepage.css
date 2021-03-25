@@ -45,7 +45,8 @@
   color: #000;
 }
 
-.new-mark {
+.new-mark,
+.sold-mark {
   color: #dc143c;
   font-size: 0.9375rem;
 }
@@ -108,7 +109,8 @@
     font-size: 0.9375rem;
   }
 
-  .new-mark {
+  .new-mark,
+  .sold-mark {
     font-size: 1rem;
   }
 
@@ -144,7 +146,8 @@
     font-size: 1rem;
   }
 
-  .new-mark {
+  .new-mark,
+  .sold-mark {
     font-size: 1.0625rem;
   }
 

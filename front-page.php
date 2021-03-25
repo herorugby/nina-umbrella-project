@@ -22,7 +22,7 @@
 				$progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
 				if ($leavedays > $progress) {
 					echo '<p class="new-info__cap">New Item Arrival</p>';
-					echo '<a class="new-info__all-items__link" href=" ' . get_post_type_archive_link('item') . ' ">check Items...</a>';
+					echo '<a class="new-info__all-items__link" href=" ' . get_post_type_archive_link('item') . ' ">check New Item...</a>';
 				}
 				?>
 			<?php endwhile; ?>

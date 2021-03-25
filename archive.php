@@ -62,6 +62,11 @@
                                     echo '<span class="new-mark">NEW</span>';
                                 }
                                 ?>
+                                <?php
+                                if (get_field('soldout')) {
+                                    echo '<span class="sold-mark">Sold Out</span>';
+                                }
+                                ?>
                                 <div><?php the_title(); ?></div>
                                 <div class="all-items__img">
                                     <?php the_post_thumbnail('thumbnail'); ?>
@@ -88,6 +93,11 @@
                                 echo '<span class="new-mark">NEW</span>';
                             }
                             ?>
+                            <?php
+                            if (get_field('soldout')) {
+                                echo '<span class="sold-mark">Sold Out</span>';
+                            }
+                            ?>
                             <p><?php the_title(); ?></p>
                             <?php
                             $pic     = get_field('pic');  // フィールドの種類を取得
@@ -108,6 +118,14 @@
                                     <li class="remodal-field__list__item">
                                         <b>素材：</b>
                                         <span><?php the_field('material'); ?></span>
+                                    </li>
+                                    <li class="remodal-field__list__item">
+                                        <b>詳細：</b>
+                                        <?php if (get_field('soldout')) : ?>
+                                            <span class="sold-mark">Sold Out</span>
+                                        <?php else : ?>
+                                            <a href="<?php the_field('buy'); ?>" target="_blank" rel="noopener">BASEへ</a>
+                                        <?php endif; ?>
                                     </li>
                                 </ul>
                             </div>
