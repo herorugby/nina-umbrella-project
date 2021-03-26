@@ -45,7 +45,8 @@
   color: #000;
 }
 
-.new-mark {
+.new-mark,
+.sold-mark {
   color: #dc143c;
   font-size: 0.9375rem;
 }
@@ -75,6 +76,12 @@
   margin-top: 1%;
 }
 
+.remodal-field__list__item a,
+.remodal-field__list__item a:visited {
+  color: #dc143c;
+  text-decoration: none;
+}
+
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
@@ -102,7 +109,8 @@
     font-size: 0.9375rem;
   }
 
-  .new-mark {
+  .new-mark,
+  .sold-mark {
     font-size: 1rem;
   }
 
@@ -138,7 +146,8 @@
     font-size: 1rem;
   }
 
-  .new-mark {
+  .new-mark,
+  .sold-mark {
     font-size: 1.0625rem;
   }
 

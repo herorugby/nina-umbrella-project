@@ -54,7 +54,7 @@
                             <a href="#<?php the_ID(); ?>" class="all-items__details">
 
                                 <?php
-                                $leavedays = 7;                                  // NEWマークを表示する日数
+                                $leavedays = 2;                                  // NEWマークを表示する日数
                                 $now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
                                 $entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
                                 $progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -62,8 +62,12 @@
                                     echo '<span class="new-mark">NEW</span>';
                                 }
                                 ?>
-
-                                【<?php the_title(); ?>】
+                                <?php
+                                if (get_field('soldout')) {
+                                    echo '<span class="sold-mark">Sold Out</span>';
+                                }
+                                ?>
+                                <div><?php the_title(); ?></div>
                                 <div class="all-items__img">
                                     <?php the_post_thumbnail('thumbnail'); ?>
                                 </div>
@@ -81,7 +85,7 @@
 
                         <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
                             <?php
-                            $leavedays = 7;                                  // NEWマークを表示する日数
+                            $leavedays = 2;                                  // NEWマークを表示する日数
                             $now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
                             $entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
                             $progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
@@ -89,14 +93,18 @@
                                 echo '<span class="new-mark">NEW</span>';
                             }
                             ?>
-                            【<?php the_title(); ?>】
+                            <?php
+                            if (get_field('soldout')) {
+                                echo '<span class="sold-mark">Sold Out</span>';
+                            }
+                            ?>
+                            <p><?php the_title(); ?></p>
                             <?php
                             $pic     = get_field('pic');  // フィールドの種類を取得
                             $pic_url = $pic['url'];       // フィールドに登録した画像urlを取得
                             ?>
                             <img class="remodal-pic" src="<?php echo $pic_url; ?>" alt="アイテム画像">
                             <div class="remodal-textleft">
-                                <?php the_content(); ?>
                                 <?php echo do_shortcode('[wp_ulike]'); ?>
                                 <ul class="remodal-field__list">
                                     <li class="remodal-field__list__item">
@@ -110,6 +118,14 @@
                                     <li class="remodal-field__list__item">
                                         <b>素材：</b>
                                         <span><?php the_field('material'); ?></span>
+                                    </li>
+                                    <li class="remodal-field__list__item">
+                                        <b>詳細：</b>
+                                        <?php if (get_field('soldout')) : ?>
+                                            <span class="sold-mark">Sold Out</span>
+                                        <?php else : ?>
+                                            <a href="<?php the_field('buy'); ?>" target="_blank" rel="noopener">BASEへ</a>
+                                        <?php endif; ?>
                                     </li>
                                 </ul>
                             </div>
