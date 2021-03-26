@@ -1,6 +1,6 @@
 <a href="#<?php the_ID(); ?>" class="all-items__details">
     <?php
-    $leavedays = 2;                                  // NEWマークを表示する日数
+    $leavedays = 7;                                  // NEWマークを表示する日数
     $now       = date_i18n('U');                     // 現在の日時のタイムスタンプを取得
     $entry     = get_the_time('U');                  // unixタイムから投稿した時間までの経過時間を取得
     $progress  = date('U', ($now - $entry)) / 86400; //UNIXタイムをフォーマットにし、現在のローカル時間から投稿時間を引いて３日分の時間で割る
