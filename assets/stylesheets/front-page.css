@@ -106,7 +106,8 @@ h1 {
   padding-top: 0;
 }
 
-.about-sle__description a {
+.about-sle__description a,
+.about-umbrella__description a {
   text-align: center;
   display: block;
   padding-top: 3%;

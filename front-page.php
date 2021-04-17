@@ -58,6 +58,10 @@
 				<p class="about-umbrella__description card-design__description mgtp">
 					※この製品をプライベートで実際に使用している岡村の感想と、製品の説明を一部抜粋して書かせて頂いております。
 				</p>
+				<p class="about-umbrella__description card-design__description mgtp">
+					これまでの寄贈者の感想は、下記よりご覧いただけます。<br>
+					<a href="<?php echo get_post_type_archive_link('feedback'); ?>">-感想の一覧-</a>
+				</p>
 			</section>
 
 			<section class="about-nina__details__contents card-design fadeIn">
@@ -104,11 +108,11 @@
 				</p>
 				<p class="about-sle__description card-design__description">
 					下記サイトでは、全身性エリテマトーデス(SLE/Lupus)についての説明がされています。<br>
-					<a href="https://www.sanofi-sle.jp/" target="_blank" rel="noopener">SANOFI</a>
+					<a href="https://www.sanofi-sle.jp/" target="_blank" rel="noopener">-SANOFI-</a>
 				</p>
 				<p class="about-sle__description card-design__description about-sle__description__last-child">
 					下記サイトでは、ninaのアクセサリーデザインを手掛けるプロゴルファー岡村咲のエピソードが公開されています。<br>
-					<a href="https://www.sanofi-sle.jp/cope/case_03" target="_blank" rel="noopener">岡村&ensp;咲のエピソード</a>
+					<a href="https://www.sanofi-sle.jp/cope/case_03" target="_blank" rel="noopener">-岡村&ensp;咲のエピソード-</a>
 				</p>
 			</div>
 		</section>

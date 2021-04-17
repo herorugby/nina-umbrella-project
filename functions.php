@@ -93,7 +93,7 @@ function add_nina_styles()
         wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
     }
 
-    if (is_archive() || is_page('workshop') || is_tax()) {
+    if (is_archive() || is_page('workshop') || is_tax() || is_singular()) {
         wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
         wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
     }
