@@ -122,7 +122,7 @@ function add_nina_scripts()
 
     if (is_front_page()) {
         wp_enqueue_script('nina_main_js', get_template_directory_uri() . '/assets/js/front-page.js', '', '', true);
-    } else if (is_archive() || is_page('workshop') || is_page('privacy') || is_page('trade') || is_tax() || is_404()) {
+    } else if (is_archive() || is_page('workshop') || is_page('privacy') || is_page('trade') || is_tax() || is_404() || is_singular()) {
         wp_enqueue_script('nina_isolate_js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
     }
 }
