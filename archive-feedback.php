@@ -50,7 +50,7 @@
 
                     <div class="remodal" data-remodal-id="<?php the_ID(); ?>">
                         <p><?php the_title(); ?></p>
-                        <?php the_content(); ?>
+                        <div class="remodal-textleft"><?php the_content(); ?></div>
                         <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
                     </div>
 
