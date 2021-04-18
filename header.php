@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Noto+Sans:wght@400&family=Kosugi+Maru&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
 </head>
@@ -25,9 +26,9 @@
         </div>
 
         <div class="header__img-slide-show">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpeg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpeg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpeg" alt="トップページのスライド画像">
         </div>
 
         <nav id="gnav" class="container gnav__container">

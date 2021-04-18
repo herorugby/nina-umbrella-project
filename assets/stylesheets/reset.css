@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-  font-family: "Kosugi Maru", sans-serif;
-}
-
 html,
 body,
 h1,
@@ -12,6 +8,7 @@ h3,
 h4,
 h5,
 p {
+  font-family: "Kosugi Maru", sans-serif;
   margin: 0;
   padding: 0;
 }
