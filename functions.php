@@ -83,8 +83,6 @@ function add_nina_styles()
 {
     wp_enqueue_style('nina_reset_style', get_template_directory_uri() . '/assets/stylesheets/reset.css');
     wp_enqueue_style('nina_base_style', get_template_directory_uri() . '/assets/stylesheets/base.css');
-    wp_enqueue_style('remodal', get_template_directory_uri() . '/assets/stylesheets/remodal.css');
-    wp_enqueue_style('remodal_theme', get_template_directory_uri() . '/assets/stylesheets/remodal-default-theme.css');
 
     if (is_front_page()) {
         // slick css cdn
@@ -93,7 +91,14 @@ function add_nina_styles()
         wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
     }
 
-    if (is_archive() || is_page('workshop') || is_tax() || is_singular()) {
+    if (is_archive() || is_tax()) {
+        wp_enqueue_style('remodal', get_template_directory_uri() . '/assets/stylesheets/remodal.css');
+        wp_enqueue_style('remodal_theme', get_template_directory_uri() . '/assets/stylesheets/remodal-default-theme.css');
+        wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
+        wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
+    }
+
+    if (is_page('workshop')) {
         wp_enqueue_style('nina_header_sub_style', get_template_directory_uri() . '/assets/stylesheets/other-page-header.css');
         wp_enqueue_style('nina_singlepage_style', get_template_directory_uri() . '/assets/stylesheets/singlepage.css');
     }
