@@ -116,13 +116,14 @@ function add_nina_scripts()
 {
     // get jquery
     wp_enqueue_script('jquery');
-    // slick jquery plugin cdn
-    wp_enqueue_script('slick_carousel_js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js');
-    wp_enqueue_script('nina_remodal_js', get_template_directory_uri() . '/assets/js/remodal.min.js');
-
     if (is_front_page()) {
+        // slick jquery plugin cdn
+        wp_enqueue_script('slick_carousel_js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', '', '', true);
         wp_enqueue_script('nina_main_js', get_template_directory_uri() . '/assets/js/front-page.js', '', '', true);
-    } else if (is_archive() || is_page('workshop') || is_page('privacy') || is_page('trade') || is_tax() || is_404() || is_singular()) {
+    } else if (is_archive() || is_tax()) {
+        wp_enqueue_script('nina_remodal_js', get_template_directory_uri() . '/assets/js/remodal.min.js', '', '', true);
+        wp_enqueue_script('nina_isolate_js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
+    } else if (is_page('workshop') || is_page('privacy') || is_page('trade') || is_404()) {
         wp_enqueue_script('nina_isolate_js', get_template_directory_uri() . '/assets/js/single-page.js', '', '', true);
     }
 }
