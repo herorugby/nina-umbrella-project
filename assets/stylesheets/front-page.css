@@ -1,12 +1,28 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: "notosans";
+  src: url("../fonts/notosans.eot"),
+    url("../fonts/notosans.woff") format("woff"),
+    url("../fonts/notosans.ttf") format("truetype"),
+    url("../fonts/notosans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../fonts/dancing.eot"), url("../fonts/dancing.woff") format("woff"),
+    url("../fonts/dancing.ttf") format("truetype"),
+    url("../fonts/dancing.woff2") format("woff2");
+}
+
 /* fonts setting */
 h1 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "notosans";
 }
 
 /* top title setting */
 .main-title__catch {
-  font-family: "Dancing Script", cursive;
+  font-family: "dancing";
   font-size: 0.875rem;
 }
 

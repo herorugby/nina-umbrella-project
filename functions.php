@@ -72,8 +72,7 @@ function add_nina_styles()
     wp_enqueue_style('nina_base_style', get_template_directory_uri() . '/assets/stylesheets/base.css');
 
     if (is_front_page()) {
-        // slick css cdn
-        wp_enqueue_style('slick_carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css');
+        wp_enqueue_style('slick_carousel', get_template_directory_uri() . '/assets/stylesheets/slick.css');
         wp_enqueue_style('nina_front_page_style', get_template_directory_uri() . '/assets/stylesheets/front-page.css');
     }
 

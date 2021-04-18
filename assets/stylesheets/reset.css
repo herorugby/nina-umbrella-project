@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* fonts setting */
+
+@font-face {
+  font-family: "kosugi";
+  src: url("../fonts/kosugi.eot"), url("../fonts/kosugi.woff") format("woff"),
+    url("../fonts/kosugi.ttf") format("truetype"),
+    url("../fonts/kosugi.woff2") format("woff2");
+}
+
 html,
 body,
 h1,
@@ -14,7 +23,7 @@ p {
 
 /* font size auto control off */
 body {
-  font-family: "Kosugi Maru", sans-serif;
+  font-family: "kosugi";
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -33,7 +42,6 @@ body {
 ol,
 ul,
 li {
-  /* font-family: "Kosugi Maru", sans-serif; */
   list-style: none;
   margin: 0;
   padding: 0;
