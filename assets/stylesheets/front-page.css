@@ -1,12 +1,28 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: "notosans";
+  src: url("../fonts/notosans.eot"),
+    url("../fonts/notosans.woff") format("woff"),
+    url("../fonts/notosans.ttf") format("truetype"),
+    url("../fonts/notosans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../fonts/dancing.eot"), url("../fonts/dancing.woff") format("woff"),
+    url("../fonts/dancing.ttf") format("truetype"),
+    url("../fonts/dancing.woff2") format("woff2");
+}
+
 /* fonts setting */
 h1 {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "notosans";
 }
 
 /* top title setting */
 .main-title__catch {
-  font-family: "Dancing Script", cursive;
+  font-family: "dancing";
   font-size: 0.875rem;
 }
 
@@ -59,9 +75,9 @@ h1 {
 /* Header */
 @media screen and (min-width: 960px) {
   .top__logo {
-    width: 5.5%;
+    width: 100px;
     padding-top: 2%;
-    left: calc(50% - 720px);
+    left: calc(50% - 425px);
   }
 
   .main-title__catch {
@@ -84,7 +100,7 @@ h1 {
 
 .new-info__all-items__link {
   display: block;
-  width: 50%;
+  width: 60%;
   line-height: 5vh;
   margin: 2% auto 10%;
   text-decoration: none;
@@ -106,7 +122,8 @@ h1 {
   padding-top: 0;
 }
 
-.about-sle__description a {
+.about-sle__description a,
+.about-umbrella__description a {
   text-align: center;
   display: block;
   padding-top: 3%;

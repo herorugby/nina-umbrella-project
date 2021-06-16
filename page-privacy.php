@@ -1,7 +1,6 @@
 <!-- get header -->
 <?php get_header('sub'); ?>
 
-
 <main id="main" class="main">
 
     <ul class="container breadcrumb__list">

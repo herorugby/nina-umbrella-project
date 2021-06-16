@@ -25,9 +25,9 @@
         </div>
 
         <div class="header__img-slide-show">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpg" alt="トップページのスライド画像">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show1.jpeg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show2.jpeg" alt="トップページのスライド画像">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/header__img-slide-show3.jpeg" alt="トップページのスライド画像">
         </div>
 
         <nav id="gnav" class="container gnav__container">
@@ -37,7 +37,5 @@
                 <li class="gnav__list__item"><a href="<?php echo get_post_type_archive_link('item'); ?>">Items</a></li>
             </ul>
         </nav>
-
-
 
     </header>
