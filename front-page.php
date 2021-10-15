@@ -117,6 +117,10 @@
 			</div>
 		</section>
 
+		<section id="about-ninakaars" class="main__about fadeIn">
+
+		</section>
+
 	</div>
 
 </main>
